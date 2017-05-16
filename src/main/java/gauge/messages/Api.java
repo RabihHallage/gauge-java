@@ -127,12 +127,23 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.GetProjectRootRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetProjectRootRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetProjectRootRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -396,7 +407,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Project Root directory.
      * </pre>
      *
-     * <code>optional string projectRoot = 1;</code>
+     * <code>string projectRoot = 1;</code>
      */
     java.lang.String getProjectRoot();
     /**
@@ -404,7 +415,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Project Root directory.
      * </pre>
      *
-     * <code>optional string projectRoot = 1;</code>
+     * <code>string projectRoot = 1;</code>
      */
     com.google.protobuf.ByteString
         getProjectRootBytes();
@@ -489,7 +500,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Project Root directory.
      * </pre>
      *
-     * <code>optional string projectRoot = 1;</code>
+     * <code>string projectRoot = 1;</code>
      */
     public java.lang.String getProjectRoot() {
       java.lang.Object ref = projectRoot_;
@@ -508,7 +519,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Project Root directory.
      * </pre>
      *
-     * <code>optional string projectRoot = 1;</code>
+     * <code>string projectRoot = 1;</code>
      */
     public com.google.protobuf.ByteString
         getProjectRootBytes() {
@@ -576,7 +587,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PROJECTROOT_FIELD_NUMBER;
       hash = (53 * hash) + getProjectRoot().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -584,6 +595,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetProjectRootResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetProjectRootResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetProjectRootResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -803,7 +825,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Project Root directory.
        * </pre>
        *
-       * <code>optional string projectRoot = 1;</code>
+       * <code>string projectRoot = 1;</code>
        */
       public java.lang.String getProjectRoot() {
         java.lang.Object ref = projectRoot_;
@@ -822,7 +844,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Project Root directory.
        * </pre>
        *
-       * <code>optional string projectRoot = 1;</code>
+       * <code>string projectRoot = 1;</code>
        */
       public com.google.protobuf.ByteString
           getProjectRootBytes() {
@@ -842,7 +864,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Project Root directory.
        * </pre>
        *
-       * <code>optional string projectRoot = 1;</code>
+       * <code>string projectRoot = 1;</code>
        */
       public Builder setProjectRoot(
           java.lang.String value) {
@@ -859,7 +881,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Project Root directory.
        * </pre>
        *
-       * <code>optional string projectRoot = 1;</code>
+       * <code>string projectRoot = 1;</code>
        */
       public Builder clearProjectRoot() {
         
@@ -872,7 +894,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Project Root directory.
        * </pre>
        *
-       * <code>optional string projectRoot = 1;</code>
+       * <code>string projectRoot = 1;</code>
        */
       public Builder setProjectRootBytes(
           com.google.protobuf.ByteString value) {
@@ -1047,12 +1069,23 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.GetInstallationRootRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetInstallationRootRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetInstallationRootRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1316,7 +1349,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Gauge installation directory
      * </pre>
      *
-     * <code>optional string installationRoot = 1;</code>
+     * <code>string installationRoot = 1;</code>
      */
     java.lang.String getInstallationRoot();
     /**
@@ -1324,7 +1357,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Gauge installation directory
      * </pre>
      *
-     * <code>optional string installationRoot = 1;</code>
+     * <code>string installationRoot = 1;</code>
      */
     com.google.protobuf.ByteString
         getInstallationRootBytes();
@@ -1409,7 +1442,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Gauge installation directory
      * </pre>
      *
-     * <code>optional string installationRoot = 1;</code>
+     * <code>string installationRoot = 1;</code>
      */
     public java.lang.String getInstallationRoot() {
       java.lang.Object ref = installationRoot_;
@@ -1428,7 +1461,7 @@ public final class Api {
      *&#47; Holds the absolute path of the Gauge installation directory
      * </pre>
      *
-     * <code>optional string installationRoot = 1;</code>
+     * <code>string installationRoot = 1;</code>
      */
     public com.google.protobuf.ByteString
         getInstallationRootBytes() {
@@ -1496,7 +1529,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + INSTALLATIONROOT_FIELD_NUMBER;
       hash = (53 * hash) + getInstallationRoot().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1504,6 +1537,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetInstallationRootResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetInstallationRootResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetInstallationRootResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1723,7 +1767,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Gauge installation directory
        * </pre>
        *
-       * <code>optional string installationRoot = 1;</code>
+       * <code>string installationRoot = 1;</code>
        */
       public java.lang.String getInstallationRoot() {
         java.lang.Object ref = installationRoot_;
@@ -1742,7 +1786,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Gauge installation directory
        * </pre>
        *
-       * <code>optional string installationRoot = 1;</code>
+       * <code>string installationRoot = 1;</code>
        */
       public com.google.protobuf.ByteString
           getInstallationRootBytes() {
@@ -1762,7 +1806,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Gauge installation directory
        * </pre>
        *
-       * <code>optional string installationRoot = 1;</code>
+       * <code>string installationRoot = 1;</code>
        */
       public Builder setInstallationRoot(
           java.lang.String value) {
@@ -1779,7 +1823,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Gauge installation directory
        * </pre>
        *
-       * <code>optional string installationRoot = 1;</code>
+       * <code>string installationRoot = 1;</code>
        */
       public Builder clearInstallationRoot() {
         
@@ -1792,7 +1836,7 @@ public final class Api {
        *&#47; Holds the absolute path of the Gauge installation directory
        * </pre>
        *
-       * <code>optional string installationRoot = 1;</code>
+       * <code>string installationRoot = 1;</code>
        */
       public Builder setInstallationRootBytes(
           com.google.protobuf.ByteString value) {
@@ -1967,12 +2011,23 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.GetAllStepsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetAllStepsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetAllStepsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2462,7 +2517,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getAllStepsCount() > 0) {
         hash = (37 * hash) + ALLSTEPS_FIELD_NUMBER;
         hash = (53 * hash) + getAllStepsList().hashCode();
@@ -2472,6 +2527,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetAllStepsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetAllStepsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetAllStepsResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3270,7 +3336,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getSpecsCount() > 0) {
         hash = (37 * hash) + SPECS_FIELD_NUMBER;
         hash = (53 * hash) + getSpecsList().hashCode();
@@ -3280,6 +3346,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.SpecsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.SpecsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.SpecsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3783,7 +3860,7 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       boolean hasSpec();
       /**
@@ -3791,7 +3868,7 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       gauge.messages.Spec.ProtoSpec getSpec();
       /**
@@ -3799,7 +3876,7 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       gauge.messages.Spec.ProtoSpecOrBuilder getSpecOrBuilder();
 
@@ -3810,7 +3887,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      java.util.List<gauge.messages.Api.Error> 
+      java.util.List<gauge.messages.Spec.Error> 
           getParseErrorsList();
       /**
        * <pre>
@@ -3819,7 +3896,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      gauge.messages.Api.Error getParseErrors(int index);
+      gauge.messages.Spec.Error getParseErrors(int index);
       /**
        * <pre>
        *&#47; Holds a collection of parse errors present in the above spec.
@@ -3835,7 +3912,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      java.util.List<? extends gauge.messages.Api.ErrorOrBuilder> 
+      java.util.List<? extends gauge.messages.Spec.ErrorOrBuilder> 
           getParseErrorsOrBuilderList();
       /**
        * <pre>
@@ -3844,7 +3921,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      gauge.messages.Api.ErrorOrBuilder getParseErrorsOrBuilder(
+      gauge.messages.Spec.ErrorOrBuilder getParseErrorsOrBuilder(
           int index);
     }
     /**
@@ -3902,11 +3979,11 @@ public final class Api {
               }
               case 18: {
                 if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                  parseErrors_ = new java.util.ArrayList<gauge.messages.Api.Error>();
+                  parseErrors_ = new java.util.ArrayList<gauge.messages.Spec.Error>();
                   mutable_bitField0_ |= 0x00000002;
                 }
                 parseErrors_.add(
-                    input.readMessage(gauge.messages.Api.Error.parser(), extensionRegistry));
+                    input.readMessage(gauge.messages.Spec.Error.parser(), extensionRegistry));
                 break;
               }
             }
@@ -3943,7 +4020,7 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       public boolean hasSpec() {
         return spec_ != null;
@@ -3953,7 +4030,7 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       public gauge.messages.Spec.ProtoSpec getSpec() {
         return spec_ == null ? gauge.messages.Spec.ProtoSpec.getDefaultInstance() : spec_;
@@ -3963,14 +4040,14 @@ public final class Api {
        *&#47; Holds a collection of Specs that are defined in the project.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+       * <code>.gauge.messages.ProtoSpec spec = 1;</code>
        */
       public gauge.messages.Spec.ProtoSpecOrBuilder getSpecOrBuilder() {
         return getSpec();
       }
 
       public static final int PARSEERRORS_FIELD_NUMBER = 2;
-      private java.util.List<gauge.messages.Api.Error> parseErrors_;
+      private java.util.List<gauge.messages.Spec.Error> parseErrors_;
       /**
        * <pre>
        *&#47; Holds a collection of parse errors present in the above spec.
@@ -3978,7 +4055,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      public java.util.List<gauge.messages.Api.Error> getParseErrorsList() {
+      public java.util.List<gauge.messages.Spec.Error> getParseErrorsList() {
         return parseErrors_;
       }
       /**
@@ -3988,7 +4065,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      public java.util.List<? extends gauge.messages.Api.ErrorOrBuilder> 
+      public java.util.List<? extends gauge.messages.Spec.ErrorOrBuilder> 
           getParseErrorsOrBuilderList() {
         return parseErrors_;
       }
@@ -4009,7 +4086,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      public gauge.messages.Api.Error getParseErrors(int index) {
+      public gauge.messages.Spec.Error getParseErrors(int index) {
         return parseErrors_.get(index);
       }
       /**
@@ -4019,7 +4096,7 @@ public final class Api {
        *
        * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
        */
-      public gauge.messages.Api.ErrorOrBuilder getParseErrorsOrBuilder(
+      public gauge.messages.Spec.ErrorOrBuilder getParseErrorsOrBuilder(
           int index) {
         return parseErrors_.get(index);
       }
@@ -4089,7 +4166,7 @@ public final class Api {
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         if (hasSpec()) {
           hash = (37 * hash) + SPEC_FIELD_NUMBER;
           hash = (53 * hash) + getSpec().hashCode();
@@ -4103,6 +4180,17 @@ public final class Api {
         return hash;
       }
 
+      public static gauge.messages.Api.SpecsResponse.SpecDetail parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static gauge.messages.Api.SpecsResponse.SpecDetail parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
       public static gauge.messages.Api.SpecsResponse.SpecDetail parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4373,7 +4461,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public boolean hasSpec() {
           return specBuilder_ != null || spec_ != null;
@@ -4383,7 +4471,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public gauge.messages.Spec.ProtoSpec getSpec() {
           if (specBuilder_ == null) {
@@ -4397,7 +4485,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public Builder setSpec(gauge.messages.Spec.ProtoSpec value) {
           if (specBuilder_ == null) {
@@ -4417,7 +4505,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public Builder setSpec(
             gauge.messages.Spec.ProtoSpec.Builder builderForValue) {
@@ -4435,7 +4523,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public Builder mergeSpec(gauge.messages.Spec.ProtoSpec value) {
           if (specBuilder_ == null) {
@@ -4457,7 +4545,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public Builder clearSpec() {
           if (specBuilder_ == null) {
@@ -4475,7 +4563,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public gauge.messages.Spec.ProtoSpec.Builder getSpecBuilder() {
           
@@ -4487,7 +4575,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         public gauge.messages.Spec.ProtoSpecOrBuilder getSpecOrBuilder() {
           if (specBuilder_ != null) {
@@ -4502,7 +4590,7 @@ public final class Api {
          *&#47; Holds a collection of Specs that are defined in the project.
          * </pre>
          *
-         * <code>optional .gauge.messages.ProtoSpec spec = 1;</code>
+         * <code>.gauge.messages.ProtoSpec spec = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             gauge.messages.Spec.ProtoSpec, gauge.messages.Spec.ProtoSpec.Builder, gauge.messages.Spec.ProtoSpecOrBuilder> 
@@ -4518,17 +4606,17 @@ public final class Api {
           return specBuilder_;
         }
 
-        private java.util.List<gauge.messages.Api.Error> parseErrors_ =
+        private java.util.List<gauge.messages.Spec.Error> parseErrors_ =
           java.util.Collections.emptyList();
         private void ensureParseErrorsIsMutable() {
           if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-            parseErrors_ = new java.util.ArrayList<gauge.messages.Api.Error>(parseErrors_);
+            parseErrors_ = new java.util.ArrayList<gauge.messages.Spec.Error>(parseErrors_);
             bitField0_ |= 0x00000002;
            }
         }
 
         private com.google.protobuf.RepeatedFieldBuilderV3<
-            gauge.messages.Api.Error, gauge.messages.Api.Error.Builder, gauge.messages.Api.ErrorOrBuilder> parseErrorsBuilder_;
+            gauge.messages.Spec.Error, gauge.messages.Spec.Error.Builder, gauge.messages.Spec.ErrorOrBuilder> parseErrorsBuilder_;
 
         /**
          * <pre>
@@ -4537,7 +4625,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public java.util.List<gauge.messages.Api.Error> getParseErrorsList() {
+        public java.util.List<gauge.messages.Spec.Error> getParseErrorsList() {
           if (parseErrorsBuilder_ == null) {
             return java.util.Collections.unmodifiableList(parseErrors_);
           } else {
@@ -4565,7 +4653,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public gauge.messages.Api.Error getParseErrors(int index) {
+        public gauge.messages.Spec.Error getParseErrors(int index) {
           if (parseErrorsBuilder_ == null) {
             return parseErrors_.get(index);
           } else {
@@ -4580,7 +4668,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder setParseErrors(
-            int index, gauge.messages.Api.Error value) {
+            int index, gauge.messages.Spec.Error value) {
           if (parseErrorsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -4601,7 +4689,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder setParseErrors(
-            int index, gauge.messages.Api.Error.Builder builderForValue) {
+            int index, gauge.messages.Spec.Error.Builder builderForValue) {
           if (parseErrorsBuilder_ == null) {
             ensureParseErrorsIsMutable();
             parseErrors_.set(index, builderForValue.build());
@@ -4618,7 +4706,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public Builder addParseErrors(gauge.messages.Api.Error value) {
+        public Builder addParseErrors(gauge.messages.Spec.Error value) {
           if (parseErrorsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -4639,7 +4727,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder addParseErrors(
-            int index, gauge.messages.Api.Error value) {
+            int index, gauge.messages.Spec.Error value) {
           if (parseErrorsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -4660,7 +4748,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder addParseErrors(
-            gauge.messages.Api.Error.Builder builderForValue) {
+            gauge.messages.Spec.Error.Builder builderForValue) {
           if (parseErrorsBuilder_ == null) {
             ensureParseErrorsIsMutable();
             parseErrors_.add(builderForValue.build());
@@ -4678,7 +4766,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder addParseErrors(
-            int index, gauge.messages.Api.Error.Builder builderForValue) {
+            int index, gauge.messages.Spec.Error.Builder builderForValue) {
           if (parseErrorsBuilder_ == null) {
             ensureParseErrorsIsMutable();
             parseErrors_.add(index, builderForValue.build());
@@ -4696,7 +4784,7 @@ public final class Api {
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
         public Builder addAllParseErrors(
-            java.lang.Iterable<? extends gauge.messages.Api.Error> values) {
+            java.lang.Iterable<? extends gauge.messages.Spec.Error> values) {
           if (parseErrorsBuilder_ == null) {
             ensureParseErrorsIsMutable();
             com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4748,7 +4836,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public gauge.messages.Api.Error.Builder getParseErrorsBuilder(
+        public gauge.messages.Spec.Error.Builder getParseErrorsBuilder(
             int index) {
           return getParseErrorsFieldBuilder().getBuilder(index);
         }
@@ -4759,7 +4847,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public gauge.messages.Api.ErrorOrBuilder getParseErrorsOrBuilder(
+        public gauge.messages.Spec.ErrorOrBuilder getParseErrorsOrBuilder(
             int index) {
           if (parseErrorsBuilder_ == null) {
             return parseErrors_.get(index);  } else {
@@ -4773,7 +4861,7 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public java.util.List<? extends gauge.messages.Api.ErrorOrBuilder> 
+        public java.util.List<? extends gauge.messages.Spec.ErrorOrBuilder> 
              getParseErrorsOrBuilderList() {
           if (parseErrorsBuilder_ != null) {
             return parseErrorsBuilder_.getMessageOrBuilderList();
@@ -4788,9 +4876,9 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public gauge.messages.Api.Error.Builder addParseErrorsBuilder() {
+        public gauge.messages.Spec.Error.Builder addParseErrorsBuilder() {
           return getParseErrorsFieldBuilder().addBuilder(
-              gauge.messages.Api.Error.getDefaultInstance());
+              gauge.messages.Spec.Error.getDefaultInstance());
         }
         /**
          * <pre>
@@ -4799,10 +4887,10 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public gauge.messages.Api.Error.Builder addParseErrorsBuilder(
+        public gauge.messages.Spec.Error.Builder addParseErrorsBuilder(
             int index) {
           return getParseErrorsFieldBuilder().addBuilder(
-              index, gauge.messages.Api.Error.getDefaultInstance());
+              index, gauge.messages.Spec.Error.getDefaultInstance());
         }
         /**
          * <pre>
@@ -4811,16 +4899,16 @@ public final class Api {
          *
          * <code>repeated .gauge.messages.Error parseErrors = 2;</code>
          */
-        public java.util.List<gauge.messages.Api.Error.Builder> 
+        public java.util.List<gauge.messages.Spec.Error.Builder> 
              getParseErrorsBuilderList() {
           return getParseErrorsFieldBuilder().getBuilderList();
         }
         private com.google.protobuf.RepeatedFieldBuilderV3<
-            gauge.messages.Api.Error, gauge.messages.Api.Error.Builder, gauge.messages.Api.ErrorOrBuilder> 
+            gauge.messages.Spec.Error, gauge.messages.Spec.Error.Builder, gauge.messages.Spec.ErrorOrBuilder> 
             getParseErrorsFieldBuilder() {
           if (parseErrorsBuilder_ == null) {
             parseErrorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                gauge.messages.Api.Error, gauge.messages.Api.Error.Builder, gauge.messages.Api.ErrorOrBuilder>(
+                gauge.messages.Spec.Error, gauge.messages.Spec.Error.Builder, gauge.messages.Spec.ErrorOrBuilder>(
                     parseErrors_,
                     ((bitField0_ & 0x00000002) == 0x00000002),
                     getParentForChildren(),
@@ -4986,7 +5074,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getDetailsCount() > 0) {
         hash = (37 * hash) + DETAILS_FIELD_NUMBER;
         hash = (53 * hash) + getDetailsList().hashCode();
@@ -4996,6 +5084,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.SpecsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.SpecsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.SpecsResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5606,801 +5705,6 @@ public final class Api {
 
   }
 
-  public interface ErrorOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:gauge.messages.Error)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     *&#47; Holds the filename.
-     * </pre>
-     *
-     * <code>optional string filename = 1;</code>
-     */
-    java.lang.String getFilename();
-    /**
-     * <pre>
-     *&#47; Holds the filename.
-     * </pre>
-     *
-     * <code>optional string filename = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getFilenameBytes();
-
-    /**
-     * <pre>
-     *&#47; Holds the line number of the error in file.
-     * </pre>
-     *
-     * <code>optional int32 lineNumber = 2;</code>
-     */
-    int getLineNumber();
-
-    /**
-     * <pre>
-     *&#47; Holds the error message.
-     * </pre>
-     *
-     * <code>optional string message = 3;</code>
-     */
-    java.lang.String getMessage();
-    /**
-     * <pre>
-     *&#47; Holds the error message.
-     * </pre>
-     *
-     * <code>optional string message = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getMessageBytes();
-  }
-  /**
-   * Protobuf type {@code gauge.messages.Error}
-   */
-  public  static final class Error extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:gauge.messages.Error)
-      ErrorOrBuilder {
-    // Use Error.newBuilder() to construct.
-    private Error(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Error() {
-      filename_ = "";
-      lineNumber_ = 0;
-      message_ = "";
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
-    }
-    private Error(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!input.skipField(tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              filename_ = s;
-              break;
-            }
-            case 16: {
-
-              lineNumber_ = input.readInt32();
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              message_ = s;
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return gauge.messages.Api.internal_static_gauge_messages_Error_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return gauge.messages.Api.internal_static_gauge_messages_Error_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              gauge.messages.Api.Error.class, gauge.messages.Api.Error.Builder.class);
-    }
-
-    public static final int FILENAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object filename_;
-    /**
-     * <pre>
-     *&#47; Holds the filename.
-     * </pre>
-     *
-     * <code>optional string filename = 1;</code>
-     */
-    public java.lang.String getFilename() {
-      java.lang.Object ref = filename_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        filename_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *&#47; Holds the filename.
-     * </pre>
-     *
-     * <code>optional string filename = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getFilenameBytes() {
-      java.lang.Object ref = filename_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        filename_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int LINENUMBER_FIELD_NUMBER = 2;
-    private int lineNumber_;
-    /**
-     * <pre>
-     *&#47; Holds the line number of the error in file.
-     * </pre>
-     *
-     * <code>optional int32 lineNumber = 2;</code>
-     */
-    public int getLineNumber() {
-      return lineNumber_;
-    }
-
-    public static final int MESSAGE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object message_;
-    /**
-     * <pre>
-     *&#47; Holds the error message.
-     * </pre>
-     *
-     * <code>optional string message = 3;</code>
-     */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        message_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *&#47; Holds the error message.
-     * </pre>
-     *
-     * <code>optional string message = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getMessageBytes() {
-      java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        message_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getFilenameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, filename_);
-      }
-      if (lineNumber_ != 0) {
-        output.writeInt32(2, lineNumber_);
-      }
-      if (!getMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, message_);
-      }
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getFilenameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, filename_);
-      }
-      if (lineNumber_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, lineNumber_);
-      }
-      if (!getMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, message_);
-      }
-      memoizedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof gauge.messages.Api.Error)) {
-        return super.equals(obj);
-      }
-      gauge.messages.Api.Error other = (gauge.messages.Api.Error) obj;
-
-      boolean result = true;
-      result = result && getFilename()
-          .equals(other.getFilename());
-      result = result && (getLineNumber()
-          == other.getLineNumber());
-      result = result && getMessage()
-          .equals(other.getMessage());
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
-      hash = (37 * hash) + FILENAME_FIELD_NUMBER;
-      hash = (53 * hash) + getFilename().hashCode();
-      hash = (37 * hash) + LINENUMBER_FIELD_NUMBER;
-      hash = (53 * hash) + getLineNumber();
-      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static gauge.messages.Api.Error parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static gauge.messages.Api.Error parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static gauge.messages.Api.Error parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static gauge.messages.Api.Error parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static gauge.messages.Api.Error parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static gauge.messages.Api.Error parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static gauge.messages.Api.Error parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static gauge.messages.Api.Error parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static gauge.messages.Api.Error parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static gauge.messages.Api.Error parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(gauge.messages.Api.Error prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code gauge.messages.Error}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:gauge.messages.Error)
-        gauge.messages.Api.ErrorOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return gauge.messages.Api.internal_static_gauge_messages_Error_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return gauge.messages.Api.internal_static_gauge_messages_Error_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                gauge.messages.Api.Error.class, gauge.messages.Api.Error.Builder.class);
-      }
-
-      // Construct using gauge.messages.Api.Error.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        filename_ = "";
-
-        lineNumber_ = 0;
-
-        message_ = "";
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return gauge.messages.Api.internal_static_gauge_messages_Error_descriptor;
-      }
-
-      public gauge.messages.Api.Error getDefaultInstanceForType() {
-        return gauge.messages.Api.Error.getDefaultInstance();
-      }
-
-      public gauge.messages.Api.Error build() {
-        gauge.messages.Api.Error result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public gauge.messages.Api.Error buildPartial() {
-        gauge.messages.Api.Error result = new gauge.messages.Api.Error(this);
-        result.filename_ = filename_;
-        result.lineNumber_ = lineNumber_;
-        result.message_ = message_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof gauge.messages.Api.Error) {
-          return mergeFrom((gauge.messages.Api.Error)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(gauge.messages.Api.Error other) {
-        if (other == gauge.messages.Api.Error.getDefaultInstance()) return this;
-        if (!other.getFilename().isEmpty()) {
-          filename_ = other.filename_;
-          onChanged();
-        }
-        if (other.getLineNumber() != 0) {
-          setLineNumber(other.getLineNumber());
-        }
-        if (!other.getMessage().isEmpty()) {
-          message_ = other.message_;
-          onChanged();
-        }
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        gauge.messages.Api.Error parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (gauge.messages.Api.Error) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private java.lang.Object filename_ = "";
-      /**
-       * <pre>
-       *&#47; Holds the filename.
-       * </pre>
-       *
-       * <code>optional string filename = 1;</code>
-       */
-      public java.lang.String getFilename() {
-        java.lang.Object ref = filename_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          filename_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *&#47; Holds the filename.
-       * </pre>
-       *
-       * <code>optional string filename = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getFilenameBytes() {
-        java.lang.Object ref = filename_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          filename_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *&#47; Holds the filename.
-       * </pre>
-       *
-       * <code>optional string filename = 1;</code>
-       */
-      public Builder setFilename(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        filename_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the filename.
-       * </pre>
-       *
-       * <code>optional string filename = 1;</code>
-       */
-      public Builder clearFilename() {
-        
-        filename_ = getDefaultInstance().getFilename();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the filename.
-       * </pre>
-       *
-       * <code>optional string filename = 1;</code>
-       */
-      public Builder setFilenameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        filename_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int lineNumber_ ;
-      /**
-       * <pre>
-       *&#47; Holds the line number of the error in file.
-       * </pre>
-       *
-       * <code>optional int32 lineNumber = 2;</code>
-       */
-      public int getLineNumber() {
-        return lineNumber_;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the line number of the error in file.
-       * </pre>
-       *
-       * <code>optional int32 lineNumber = 2;</code>
-       */
-      public Builder setLineNumber(int value) {
-        
-        lineNumber_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the line number of the error in file.
-       * </pre>
-       *
-       * <code>optional int32 lineNumber = 2;</code>
-       */
-      public Builder clearLineNumber() {
-        
-        lineNumber_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object message_ = "";
-      /**
-       * <pre>
-       *&#47; Holds the error message.
-       * </pre>
-       *
-       * <code>optional string message = 3;</code>
-       */
-      public java.lang.String getMessage() {
-        java.lang.Object ref = message_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          message_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *&#47; Holds the error message.
-       * </pre>
-       *
-       * <code>optional string message = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getMessageBytes() {
-        java.lang.Object ref = message_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          message_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *&#47; Holds the error message.
-       * </pre>
-       *
-       * <code>optional string message = 3;</code>
-       */
-      public Builder setMessage(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        message_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the error message.
-       * </pre>
-       *
-       * <code>optional string message = 3;</code>
-       */
-      public Builder clearMessage() {
-        
-        message_ = getDefaultInstance().getMessage();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *&#47; Holds the error message.
-       * </pre>
-       *
-       * <code>optional string message = 3;</code>
-       */
-      public Builder setMessageBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        message_ = value;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return this;
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return this;
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:gauge.messages.Error)
-    }
-
-    // @@protoc_insertion_point(class_scope:gauge.messages.Error)
-    private static final gauge.messages.Api.Error DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new gauge.messages.Api.Error();
-    }
-
-    public static gauge.messages.Api.Error getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<Error>
-        PARSER = new com.google.protobuf.AbstractParser<Error>() {
-      public Error parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Error(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<Error> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Error> getParserForType() {
-      return PARSER;
-    }
-
-    public gauge.messages.Api.Error getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface GetAllConceptsRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:gauge.messages.GetAllConceptsRequest)
       com.google.protobuf.MessageOrBuilder {
@@ -6514,12 +5818,23 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.GetAllConceptsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetAllConceptsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetAllConceptsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7009,7 +6324,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getConceptsCount() > 0) {
         hash = (37 * hash) + CONCEPTS_FIELD_NUMBER;
         hash = (53 * hash) + getConceptsList().hashCode();
@@ -7019,6 +6334,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetAllConceptsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetAllConceptsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetAllConceptsResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7638,7 +6964,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     boolean hasStepValue();
     /**
@@ -7646,7 +6972,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     gauge.messages.Spec.ProtoStepValue getStepValue();
     /**
@@ -7654,7 +6980,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder();
 
@@ -7663,7 +6989,7 @@ public final class Api {
      *&#47; The absolute path to the file that contains the Concept
      * </pre>
      *
-     * <code>optional string filepath = 2;</code>
+     * <code>string filepath = 2;</code>
      */
     java.lang.String getFilepath();
     /**
@@ -7671,7 +6997,7 @@ public final class Api {
      *&#47; The absolute path to the file that contains the Concept
      * </pre>
      *
-     * <code>optional string filepath = 2;</code>
+     * <code>string filepath = 2;</code>
      */
     com.google.protobuf.ByteString
         getFilepathBytes();
@@ -7681,7 +7007,7 @@ public final class Api {
      *&#47; The line number in the file where the concept is defined.
      * </pre>
      *
-     * <code>optional int32 lineNumber = 3;</code>
+     * <code>int32 lineNumber = 3;</code>
      */
     int getLineNumber();
   }
@@ -7784,7 +7110,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public boolean hasStepValue() {
       return stepValue_ != null;
@@ -7794,7 +7120,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public gauge.messages.Spec.ProtoStepValue getStepValue() {
       return stepValue_ == null ? gauge.messages.Spec.ProtoStepValue.getDefaultInstance() : stepValue_;
@@ -7804,7 +7130,7 @@ public final class Api {
      *&#47; The text that defines a concept
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder() {
       return getStepValue();
@@ -7817,7 +7143,7 @@ public final class Api {
      *&#47; The absolute path to the file that contains the Concept
      * </pre>
      *
-     * <code>optional string filepath = 2;</code>
+     * <code>string filepath = 2;</code>
      */
     public java.lang.String getFilepath() {
       java.lang.Object ref = filepath_;
@@ -7836,7 +7162,7 @@ public final class Api {
      *&#47; The absolute path to the file that contains the Concept
      * </pre>
      *
-     * <code>optional string filepath = 2;</code>
+     * <code>string filepath = 2;</code>
      */
     public com.google.protobuf.ByteString
         getFilepathBytes() {
@@ -7859,7 +7185,7 @@ public final class Api {
      *&#47; The line number in the file where the concept is defined.
      * </pre>
      *
-     * <code>optional int32 lineNumber = 3;</code>
+     * <code>int32 lineNumber = 3;</code>
      */
     public int getLineNumber() {
       return lineNumber_;
@@ -7938,7 +7264,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasStepValue()) {
         hash = (37 * hash) + STEPVALUE_FIELD_NUMBER;
         hash = (53 * hash) + getStepValue().hashCode();
@@ -7952,6 +7278,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.ConceptInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.ConceptInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.ConceptInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -8193,7 +7530,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public boolean hasStepValue() {
         return stepValueBuilder_ != null || stepValue_ != null;
@@ -8203,7 +7540,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValue getStepValue() {
         if (stepValueBuilder_ == null) {
@@ -8217,7 +7554,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder setStepValue(gauge.messages.Spec.ProtoStepValue value) {
         if (stepValueBuilder_ == null) {
@@ -8237,7 +7574,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder setStepValue(
           gauge.messages.Spec.ProtoStepValue.Builder builderForValue) {
@@ -8255,7 +7592,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder mergeStepValue(gauge.messages.Spec.ProtoStepValue value) {
         if (stepValueBuilder_ == null) {
@@ -8277,7 +7614,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder clearStepValue() {
         if (stepValueBuilder_ == null) {
@@ -8295,7 +7632,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValue.Builder getStepValueBuilder() {
         
@@ -8307,7 +7644,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder() {
         if (stepValueBuilder_ != null) {
@@ -8322,7 +7659,7 @@ public final class Api {
        *&#47; The text that defines a concept
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Spec.ProtoStepValue, gauge.messages.Spec.ProtoStepValue.Builder, gauge.messages.Spec.ProtoStepValueOrBuilder> 
@@ -8344,7 +7681,7 @@ public final class Api {
        *&#47; The absolute path to the file that contains the Concept
        * </pre>
        *
-       * <code>optional string filepath = 2;</code>
+       * <code>string filepath = 2;</code>
        */
       public java.lang.String getFilepath() {
         java.lang.Object ref = filepath_;
@@ -8363,7 +7700,7 @@ public final class Api {
        *&#47; The absolute path to the file that contains the Concept
        * </pre>
        *
-       * <code>optional string filepath = 2;</code>
+       * <code>string filepath = 2;</code>
        */
       public com.google.protobuf.ByteString
           getFilepathBytes() {
@@ -8383,7 +7720,7 @@ public final class Api {
        *&#47; The absolute path to the file that contains the Concept
        * </pre>
        *
-       * <code>optional string filepath = 2;</code>
+       * <code>string filepath = 2;</code>
        */
       public Builder setFilepath(
           java.lang.String value) {
@@ -8400,7 +7737,7 @@ public final class Api {
        *&#47; The absolute path to the file that contains the Concept
        * </pre>
        *
-       * <code>optional string filepath = 2;</code>
+       * <code>string filepath = 2;</code>
        */
       public Builder clearFilepath() {
         
@@ -8413,7 +7750,7 @@ public final class Api {
        *&#47; The absolute path to the file that contains the Concept
        * </pre>
        *
-       * <code>optional string filepath = 2;</code>
+       * <code>string filepath = 2;</code>
        */
       public Builder setFilepathBytes(
           com.google.protobuf.ByteString value) {
@@ -8433,7 +7770,7 @@ public final class Api {
        *&#47; The line number in the file where the concept is defined.
        * </pre>
        *
-       * <code>optional int32 lineNumber = 3;</code>
+       * <code>int32 lineNumber = 3;</code>
        */
       public int getLineNumber() {
         return lineNumber_;
@@ -8443,7 +7780,7 @@ public final class Api {
        *&#47; The line number in the file where the concept is defined.
        * </pre>
        *
-       * <code>optional int32 lineNumber = 3;</code>
+       * <code>int32 lineNumber = 3;</code>
        */
       public Builder setLineNumber(int value) {
         
@@ -8456,7 +7793,7 @@ public final class Api {
        *&#47; The line number in the file where the concept is defined.
        * </pre>
        *
-       * <code>optional int32 lineNumber = 3;</code>
+       * <code>int32 lineNumber = 3;</code>
        */
       public Builder clearLineNumber() {
         
@@ -8522,7 +7859,7 @@ public final class Api {
      *&#47; The text of the Step.
      * </pre>
      *
-     * <code>optional string stepText = 1;</code>
+     * <code>string stepText = 1;</code>
      */
     java.lang.String getStepText();
     /**
@@ -8530,7 +7867,7 @@ public final class Api {
      *&#47; The text of the Step.
      * </pre>
      *
-     * <code>optional string stepText = 1;</code>
+     * <code>string stepText = 1;</code>
      */
     com.google.protobuf.ByteString
         getStepTextBytes();
@@ -8540,7 +7877,7 @@ public final class Api {
      *&#47; Flag to indicate if the Step has an inline table.
      * </pre>
      *
-     * <code>optional bool hasInlineTable = 2;</code>
+     * <code>bool hasInlineTable = 2;</code>
      */
     boolean getHasInlineTable();
   }
@@ -8630,7 +7967,7 @@ public final class Api {
      *&#47; The text of the Step.
      * </pre>
      *
-     * <code>optional string stepText = 1;</code>
+     * <code>string stepText = 1;</code>
      */
     public java.lang.String getStepText() {
       java.lang.Object ref = stepText_;
@@ -8649,7 +7986,7 @@ public final class Api {
      *&#47; The text of the Step.
      * </pre>
      *
-     * <code>optional string stepText = 1;</code>
+     * <code>string stepText = 1;</code>
      */
     public com.google.protobuf.ByteString
         getStepTextBytes() {
@@ -8672,7 +8009,7 @@ public final class Api {
      *&#47; Flag to indicate if the Step has an inline table.
      * </pre>
      *
-     * <code>optional bool hasInlineTable = 2;</code>
+     * <code>bool hasInlineTable = 2;</code>
      */
     public boolean getHasInlineTable() {
       return hasInlineTable_;
@@ -8739,7 +8076,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STEPTEXT_FIELD_NUMBER;
       hash = (53 * hash) + getStepText().hashCode();
       hash = (37 * hash) + HASINLINETABLE_FIELD_NUMBER;
@@ -8750,6 +8087,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetStepValueRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetStepValueRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetStepValueRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -8975,7 +8323,7 @@ public final class Api {
        *&#47; The text of the Step.
        * </pre>
        *
-       * <code>optional string stepText = 1;</code>
+       * <code>string stepText = 1;</code>
        */
       public java.lang.String getStepText() {
         java.lang.Object ref = stepText_;
@@ -8994,7 +8342,7 @@ public final class Api {
        *&#47; The text of the Step.
        * </pre>
        *
-       * <code>optional string stepText = 1;</code>
+       * <code>string stepText = 1;</code>
        */
       public com.google.protobuf.ByteString
           getStepTextBytes() {
@@ -9014,7 +8362,7 @@ public final class Api {
        *&#47; The text of the Step.
        * </pre>
        *
-       * <code>optional string stepText = 1;</code>
+       * <code>string stepText = 1;</code>
        */
       public Builder setStepText(
           java.lang.String value) {
@@ -9031,7 +8379,7 @@ public final class Api {
        *&#47; The text of the Step.
        * </pre>
        *
-       * <code>optional string stepText = 1;</code>
+       * <code>string stepText = 1;</code>
        */
       public Builder clearStepText() {
         
@@ -9044,7 +8392,7 @@ public final class Api {
        *&#47; The text of the Step.
        * </pre>
        *
-       * <code>optional string stepText = 1;</code>
+       * <code>string stepText = 1;</code>
        */
       public Builder setStepTextBytes(
           com.google.protobuf.ByteString value) {
@@ -9064,7 +8412,7 @@ public final class Api {
        *&#47; Flag to indicate if the Step has an inline table.
        * </pre>
        *
-       * <code>optional bool hasInlineTable = 2;</code>
+       * <code>bool hasInlineTable = 2;</code>
        */
       public boolean getHasInlineTable() {
         return hasInlineTable_;
@@ -9074,7 +8422,7 @@ public final class Api {
        *&#47; Flag to indicate if the Step has an inline table.
        * </pre>
        *
-       * <code>optional bool hasInlineTable = 2;</code>
+       * <code>bool hasInlineTable = 2;</code>
        */
       public Builder setHasInlineTable(boolean value) {
         
@@ -9087,7 +8435,7 @@ public final class Api {
        *&#47; Flag to indicate if the Step has an inline table.
        * </pre>
        *
-       * <code>optional bool hasInlineTable = 2;</code>
+       * <code>bool hasInlineTable = 2;</code>
        */
       public Builder clearHasInlineTable() {
         
@@ -9153,7 +8501,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     boolean hasStepValue();
     /**
@@ -9161,7 +8509,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     gauge.messages.Spec.ProtoStepValue getStepValue();
     /**
@@ -9169,7 +8517,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder();
   }
@@ -9259,7 +8607,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public boolean hasStepValue() {
       return stepValue_ != null;
@@ -9269,7 +8617,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public gauge.messages.Spec.ProtoStepValue getStepValue() {
       return stepValue_ == null ? gauge.messages.Spec.ProtoStepValue.getDefaultInstance() : stepValue_;
@@ -9279,7 +8627,7 @@ public final class Api {
      *&#47; The Step corresponding to the request provided.
      * </pre>
      *
-     * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+     * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
      */
     public gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder() {
       return getStepValue();
@@ -9341,7 +8689,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasStepValue()) {
         hash = (37 * hash) + STEPVALUE_FIELD_NUMBER;
         hash = (53 * hash) + getStepValue().hashCode();
@@ -9351,6 +8699,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetStepValueResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetStepValueResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetStepValueResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -9579,7 +8938,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public boolean hasStepValue() {
         return stepValueBuilder_ != null || stepValue_ != null;
@@ -9589,7 +8948,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValue getStepValue() {
         if (stepValueBuilder_ == null) {
@@ -9603,7 +8962,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder setStepValue(gauge.messages.Spec.ProtoStepValue value) {
         if (stepValueBuilder_ == null) {
@@ -9623,7 +8982,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder setStepValue(
           gauge.messages.Spec.ProtoStepValue.Builder builderForValue) {
@@ -9641,7 +9000,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder mergeStepValue(gauge.messages.Spec.ProtoStepValue value) {
         if (stepValueBuilder_ == null) {
@@ -9663,7 +9022,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public Builder clearStepValue() {
         if (stepValueBuilder_ == null) {
@@ -9681,7 +9040,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValue.Builder getStepValueBuilder() {
         
@@ -9693,7 +9052,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       public gauge.messages.Spec.ProtoStepValueOrBuilder getStepValueOrBuilder() {
         if (stepValueBuilder_ != null) {
@@ -9708,7 +9067,7 @@ public final class Api {
        *&#47; The Step corresponding to the request provided.
        * </pre>
        *
-       * <code>optional .gauge.messages.ProtoStepValue stepValue = 1;</code>
+       * <code>.gauge.messages.ProtoStepValue stepValue = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Spec.ProtoStepValue, gauge.messages.Spec.ProtoStepValue.Builder, gauge.messages.Spec.ProtoStepValueOrBuilder> 
@@ -9781,7 +9140,7 @@ public final class Api {
      *&#47; The language to locate the lib directory for.
      * </pre>
      *
-     * <code>optional string language = 1;</code>
+     * <code>string language = 1;</code>
      */
     java.lang.String getLanguage();
     /**
@@ -9789,7 +9148,7 @@ public final class Api {
      *&#47; The language to locate the lib directory for.
      * </pre>
      *
-     * <code>optional string language = 1;</code>
+     * <code>string language = 1;</code>
      */
     com.google.protobuf.ByteString
         getLanguageBytes();
@@ -9874,7 +9233,7 @@ public final class Api {
      *&#47; The language to locate the lib directory for.
      * </pre>
      *
-     * <code>optional string language = 1;</code>
+     * <code>string language = 1;</code>
      */
     public java.lang.String getLanguage() {
       java.lang.Object ref = language_;
@@ -9893,7 +9252,7 @@ public final class Api {
      *&#47; The language to locate the lib directory for.
      * </pre>
      *
-     * <code>optional string language = 1;</code>
+     * <code>string language = 1;</code>
      */
     public com.google.protobuf.ByteString
         getLanguageBytes() {
@@ -9961,7 +9320,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LANGUAGE_FIELD_NUMBER;
       hash = (53 * hash) + getLanguage().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -9969,6 +9328,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetLanguagePluginLibPathRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetLanguagePluginLibPathRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetLanguagePluginLibPathRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -10188,7 +9558,7 @@ public final class Api {
        *&#47; The language to locate the lib directory for.
        * </pre>
        *
-       * <code>optional string language = 1;</code>
+       * <code>string language = 1;</code>
        */
       public java.lang.String getLanguage() {
         java.lang.Object ref = language_;
@@ -10207,7 +9577,7 @@ public final class Api {
        *&#47; The language to locate the lib directory for.
        * </pre>
        *
-       * <code>optional string language = 1;</code>
+       * <code>string language = 1;</code>
        */
       public com.google.protobuf.ByteString
           getLanguageBytes() {
@@ -10227,7 +9597,7 @@ public final class Api {
        *&#47; The language to locate the lib directory for.
        * </pre>
        *
-       * <code>optional string language = 1;</code>
+       * <code>string language = 1;</code>
        */
       public Builder setLanguage(
           java.lang.String value) {
@@ -10244,7 +9614,7 @@ public final class Api {
        *&#47; The language to locate the lib directory for.
        * </pre>
        *
-       * <code>optional string language = 1;</code>
+       * <code>string language = 1;</code>
        */
       public Builder clearLanguage() {
         
@@ -10257,7 +9627,7 @@ public final class Api {
        *&#47; The language to locate the lib directory for.
        * </pre>
        *
-       * <code>optional string language = 1;</code>
+       * <code>string language = 1;</code>
        */
       public Builder setLanguageBytes(
           com.google.protobuf.ByteString value) {
@@ -10328,7 +9698,7 @@ public final class Api {
      *&#47; Absolute path to the Lib directory of the language.
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     java.lang.String getPath();
     /**
@@ -10336,7 +9706,7 @@ public final class Api {
      *&#47; Absolute path to the Lib directory of the language.
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     com.google.protobuf.ByteString
         getPathBytes();
@@ -10421,7 +9791,7 @@ public final class Api {
      *&#47; Absolute path to the Lib directory of the language.
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -10440,7 +9810,7 @@ public final class Api {
      *&#47; Absolute path to the Lib directory of the language.
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -10508,7 +9878,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PATH_FIELD_NUMBER;
       hash = (53 * hash) + getPath().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -10516,6 +9886,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.GetLanguagePluginLibPathResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.GetLanguagePluginLibPathResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.GetLanguagePluginLibPathResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -10735,7 +10116,7 @@ public final class Api {
        *&#47; Absolute path to the Lib directory of the language.
        * </pre>
        *
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public java.lang.String getPath() {
         java.lang.Object ref = path_;
@@ -10754,7 +10135,7 @@ public final class Api {
        *&#47; Absolute path to the Lib directory of the language.
        * </pre>
        *
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
@@ -10774,7 +10155,7 @@ public final class Api {
        *&#47; Absolute path to the Lib directory of the language.
        * </pre>
        *
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public Builder setPath(
           java.lang.String value) {
@@ -10791,7 +10172,7 @@ public final class Api {
        *&#47; Absolute path to the Lib directory of the language.
        * </pre>
        *
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public Builder clearPath() {
         
@@ -10804,7 +10185,7 @@ public final class Api {
        *&#47; Absolute path to the Lib directory of the language.
        * </pre>
        *
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public Builder setPathBytes(
           com.google.protobuf.ByteString value) {
@@ -10875,7 +10256,7 @@ public final class Api {
      *&#47; Actual error message
      * </pre>
      *
-     * <code>optional string error = 1;</code>
+     * <code>string error = 1;</code>
      */
     java.lang.String getError();
     /**
@@ -10883,7 +10264,7 @@ public final class Api {
      *&#47; Actual error message
      * </pre>
      *
-     * <code>optional string error = 1;</code>
+     * <code>string error = 1;</code>
      */
     com.google.protobuf.ByteString
         getErrorBytes();
@@ -10968,7 +10349,7 @@ public final class Api {
      *&#47; Actual error message
      * </pre>
      *
-     * <code>optional string error = 1;</code>
+     * <code>string error = 1;</code>
      */
     public java.lang.String getError() {
       java.lang.Object ref = error_;
@@ -10987,7 +10368,7 @@ public final class Api {
      *&#47; Actual error message
      * </pre>
      *
-     * <code>optional string error = 1;</code>
+     * <code>string error = 1;</code>
      */
     public com.google.protobuf.ByteString
         getErrorBytes() {
@@ -11055,7 +10436,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ERROR_FIELD_NUMBER;
       hash = (53 * hash) + getError().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -11063,6 +10444,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.ErrorResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.ErrorResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.ErrorResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -11282,7 +10674,7 @@ public final class Api {
        *&#47; Actual error message
        * </pre>
        *
-       * <code>optional string error = 1;</code>
+       * <code>string error = 1;</code>
        */
       public java.lang.String getError() {
         java.lang.Object ref = error_;
@@ -11301,7 +10693,7 @@ public final class Api {
        *&#47; Actual error message
        * </pre>
        *
-       * <code>optional string error = 1;</code>
+       * <code>string error = 1;</code>
        */
       public com.google.protobuf.ByteString
           getErrorBytes() {
@@ -11321,7 +10713,7 @@ public final class Api {
        *&#47; Actual error message
        * </pre>
        *
-       * <code>optional string error = 1;</code>
+       * <code>string error = 1;</code>
        */
       public Builder setError(
           java.lang.String value) {
@@ -11338,7 +10730,7 @@ public final class Api {
        *&#47; Actual error message
        * </pre>
        *
-       * <code>optional string error = 1;</code>
+       * <code>string error = 1;</code>
        */
       public Builder clearError() {
         
@@ -11351,7 +10743,7 @@ public final class Api {
        *&#47; Actual error message
        * </pre>
        *
-       * <code>optional string error = 1;</code>
+       * <code>string error = 1;</code>
        */
       public Builder setErrorBytes(
           com.google.protobuf.ByteString value) {
@@ -11422,7 +10814,7 @@ public final class Api {
      *&#47; Step to refactor
      * </pre>
      *
-     * <code>optional string oldStep = 1;</code>
+     * <code>string oldStep = 1;</code>
      */
     java.lang.String getOldStep();
     /**
@@ -11430,7 +10822,7 @@ public final class Api {
      *&#47; Step to refactor
      * </pre>
      *
-     * <code>optional string oldStep = 1;</code>
+     * <code>string oldStep = 1;</code>
      */
     com.google.protobuf.ByteString
         getOldStepBytes();
@@ -11440,7 +10832,7 @@ public final class Api {
      *&#47; Change to be made
      * </pre>
      *
-     * <code>optional string newStep = 2;</code>
+     * <code>string newStep = 2;</code>
      */
     java.lang.String getNewStep();
     /**
@@ -11448,7 +10840,7 @@ public final class Api {
      *&#47; Change to be made
      * </pre>
      *
-     * <code>optional string newStep = 2;</code>
+     * <code>string newStep = 2;</code>
      */
     com.google.protobuf.ByteString
         getNewStepBytes();
@@ -11540,7 +10932,7 @@ public final class Api {
      *&#47; Step to refactor
      * </pre>
      *
-     * <code>optional string oldStep = 1;</code>
+     * <code>string oldStep = 1;</code>
      */
     public java.lang.String getOldStep() {
       java.lang.Object ref = oldStep_;
@@ -11559,7 +10951,7 @@ public final class Api {
      *&#47; Step to refactor
      * </pre>
      *
-     * <code>optional string oldStep = 1;</code>
+     * <code>string oldStep = 1;</code>
      */
     public com.google.protobuf.ByteString
         getOldStepBytes() {
@@ -11582,7 +10974,7 @@ public final class Api {
      *&#47; Change to be made
      * </pre>
      *
-     * <code>optional string newStep = 2;</code>
+     * <code>string newStep = 2;</code>
      */
     public java.lang.String getNewStep() {
       java.lang.Object ref = newStep_;
@@ -11601,7 +10993,7 @@ public final class Api {
      *&#47; Change to be made
      * </pre>
      *
-     * <code>optional string newStep = 2;</code>
+     * <code>string newStep = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNewStepBytes() {
@@ -11677,7 +11069,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + OLDSTEP_FIELD_NUMBER;
       hash = (53 * hash) + getOldStep().hashCode();
       hash = (37 * hash) + NEWSTEP_FIELD_NUMBER;
@@ -11687,6 +11079,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.PerformRefactoringRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefactoringRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.PerformRefactoringRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -11913,7 +11316,7 @@ public final class Api {
        *&#47; Step to refactor
        * </pre>
        *
-       * <code>optional string oldStep = 1;</code>
+       * <code>string oldStep = 1;</code>
        */
       public java.lang.String getOldStep() {
         java.lang.Object ref = oldStep_;
@@ -11932,7 +11335,7 @@ public final class Api {
        *&#47; Step to refactor
        * </pre>
        *
-       * <code>optional string oldStep = 1;</code>
+       * <code>string oldStep = 1;</code>
        */
       public com.google.protobuf.ByteString
           getOldStepBytes() {
@@ -11952,7 +11355,7 @@ public final class Api {
        *&#47; Step to refactor
        * </pre>
        *
-       * <code>optional string oldStep = 1;</code>
+       * <code>string oldStep = 1;</code>
        */
       public Builder setOldStep(
           java.lang.String value) {
@@ -11969,7 +11372,7 @@ public final class Api {
        *&#47; Step to refactor
        * </pre>
        *
-       * <code>optional string oldStep = 1;</code>
+       * <code>string oldStep = 1;</code>
        */
       public Builder clearOldStep() {
         
@@ -11982,7 +11385,7 @@ public final class Api {
        *&#47; Step to refactor
        * </pre>
        *
-       * <code>optional string oldStep = 1;</code>
+       * <code>string oldStep = 1;</code>
        */
       public Builder setOldStepBytes(
           com.google.protobuf.ByteString value) {
@@ -12002,7 +11405,7 @@ public final class Api {
        *&#47; Change to be made
        * </pre>
        *
-       * <code>optional string newStep = 2;</code>
+       * <code>string newStep = 2;</code>
        */
       public java.lang.String getNewStep() {
         java.lang.Object ref = newStep_;
@@ -12021,7 +11424,7 @@ public final class Api {
        *&#47; Change to be made
        * </pre>
        *
-       * <code>optional string newStep = 2;</code>
+       * <code>string newStep = 2;</code>
        */
       public com.google.protobuf.ByteString
           getNewStepBytes() {
@@ -12041,7 +11444,7 @@ public final class Api {
        *&#47; Change to be made
        * </pre>
        *
-       * <code>optional string newStep = 2;</code>
+       * <code>string newStep = 2;</code>
        */
       public Builder setNewStep(
           java.lang.String value) {
@@ -12058,7 +11461,7 @@ public final class Api {
        *&#47; Change to be made
        * </pre>
        *
-       * <code>optional string newStep = 2;</code>
+       * <code>string newStep = 2;</code>
        */
       public Builder clearNewStep() {
         
@@ -12071,7 +11474,7 @@ public final class Api {
        *&#47; Change to be made
        * </pre>
        *
-       * <code>optional string newStep = 2;</code>
+       * <code>string newStep = 2;</code>
        */
       public Builder setNewStepBytes(
           com.google.protobuf.ByteString value) {
@@ -12142,7 +11545,7 @@ public final class Api {
      *&#47; Flag indicating Success
      * </pre>
      *
-     * <code>optional bool success = 1;</code>
+     * <code>bool success = 1;</code>
      */
     boolean getSuccess();
 
@@ -12322,7 +11725,7 @@ public final class Api {
      *&#47; Flag indicating Success
      * </pre>
      *
-     * <code>optional bool success = 1;</code>
+     * <code>bool success = 1;</code>
      */
     public boolean getSuccess() {
       return success_;
@@ -12497,7 +11900,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getSuccess());
@@ -12514,6 +11917,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.PerformRefactoringResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefactoringResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.PerformRefactoringResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -12770,7 +12184,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool success = 1;</code>
+       * <code>bool success = 1;</code>
        */
       public boolean getSuccess() {
         return success_;
@@ -12780,7 +12194,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool success = 1;</code>
+       * <code>bool success = 1;</code>
        */
       public Builder setSuccess(boolean value) {
         
@@ -12793,7 +12207,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool success = 1;</code>
+       * <code>bool success = 1;</code>
        */
       public Builder clearSuccess() {
         
@@ -13110,6 +12524,1292 @@ public final class Api {
 
   }
 
+  public interface PerformRefreshRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:gauge.messages.PerformRefreshRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getFilesList();
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    int getFilesCount();
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    java.lang.String getFiles(int index);
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getFilesBytes(int index);
+  }
+  /**
+   * <pre>
+   *&#47; Tells the runner to perform refresh cache.
+   * </pre>
+   *
+   * Protobuf type {@code gauge.messages.PerformRefreshRequest}
+   */
+  public  static final class PerformRefreshRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:gauge.messages.PerformRefreshRequest)
+      PerformRefreshRequestOrBuilder {
+    // Use PerformRefreshRequest.newBuilder() to construct.
+    private PerformRefreshRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PerformRefreshRequest() {
+      files_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PerformRefreshRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                files_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              files_.add(s);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          files_ = files_.getUnmodifiableView();
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              gauge.messages.Api.PerformRefreshRequest.class, gauge.messages.Api.PerformRefreshRequest.Builder.class);
+    }
+
+    public static final int FILES_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList files_;
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getFilesList() {
+      return files_;
+    }
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    public int getFilesCount() {
+      return files_.size();
+    }
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    public java.lang.String getFiles(int index) {
+      return files_.get(index);
+    }
+    /**
+     * <pre>
+     *&#47;Refresh cache w.r.t given files
+     * </pre>
+     *
+     * <code>repeated string files = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFilesBytes(int index) {
+      return files_.getByteString(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < files_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, files_.getRaw(i));
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < files_.size(); i++) {
+          dataSize += computeStringSizeNoTag(files_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getFilesList().size();
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof gauge.messages.Api.PerformRefreshRequest)) {
+        return super.equals(obj);
+      }
+      gauge.messages.Api.PerformRefreshRequest other = (gauge.messages.Api.PerformRefreshRequest) obj;
+
+      boolean result = true;
+      result = result && getFilesList()
+          .equals(other.getFilesList());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getFilesCount() > 0) {
+        hash = (37 * hash) + FILES_FIELD_NUMBER;
+        hash = (53 * hash) + getFilesList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(gauge.messages.Api.PerformRefreshRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     *&#47; Tells the runner to perform refresh cache.
+     * </pre>
+     *
+     * Protobuf type {@code gauge.messages.PerformRefreshRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:gauge.messages.PerformRefreshRequest)
+        gauge.messages.Api.PerformRefreshRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                gauge.messages.Api.PerformRefreshRequest.class, gauge.messages.Api.PerformRefreshRequest.Builder.class);
+      }
+
+      // Construct using gauge.messages.Api.PerformRefreshRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        files_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshRequest_descriptor;
+      }
+
+      public gauge.messages.Api.PerformRefreshRequest getDefaultInstanceForType() {
+        return gauge.messages.Api.PerformRefreshRequest.getDefaultInstance();
+      }
+
+      public gauge.messages.Api.PerformRefreshRequest build() {
+        gauge.messages.Api.PerformRefreshRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public gauge.messages.Api.PerformRefreshRequest buildPartial() {
+        gauge.messages.Api.PerformRefreshRequest result = new gauge.messages.Api.PerformRefreshRequest(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          files_ = files_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.files_ = files_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof gauge.messages.Api.PerformRefreshRequest) {
+          return mergeFrom((gauge.messages.Api.PerformRefreshRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(gauge.messages.Api.PerformRefreshRequest other) {
+        if (other == gauge.messages.Api.PerformRefreshRequest.getDefaultInstance()) return this;
+        if (!other.files_.isEmpty()) {
+          if (files_.isEmpty()) {
+            files_ = other.files_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFilesIsMutable();
+            files_.addAll(other.files_);
+          }
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        gauge.messages.Api.PerformRefreshRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (gauge.messages.Api.PerformRefreshRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList files_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureFilesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          files_ = new com.google.protobuf.LazyStringArrayList(files_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getFilesList() {
+        return files_.getUnmodifiableView();
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public int getFilesCount() {
+        return files_.size();
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public java.lang.String getFiles(int index) {
+        return files_.get(index);
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFilesBytes(int index) {
+        return files_.getByteString(index);
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public Builder setFiles(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFilesIsMutable();
+        files_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public Builder addFiles(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFilesIsMutable();
+        files_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public Builder addAllFiles(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureFilesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, files_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public Builder clearFiles() {
+        files_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47;Refresh cache w.r.t given files
+       * </pre>
+       *
+       * <code>repeated string files = 1;</code>
+       */
+      public Builder addFilesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureFilesIsMutable();
+        files_.add(value);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:gauge.messages.PerformRefreshRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:gauge.messages.PerformRefreshRequest)
+    private static final gauge.messages.Api.PerformRefreshRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new gauge.messages.Api.PerformRefreshRequest();
+    }
+
+    public static gauge.messages.Api.PerformRefreshRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PerformRefreshRequest>
+        PARSER = new com.google.protobuf.AbstractParser<PerformRefreshRequest>() {
+      public PerformRefreshRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PerformRefreshRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PerformRefreshRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PerformRefreshRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public gauge.messages.Api.PerformRefreshRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface PerformRefreshResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:gauge.messages.PerformRefreshResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     *&#47; Flag indicating the success of Refresh cache operation.
+     * </pre>
+     *
+     * <code>bool success = 1;</code>
+     */
+    boolean getSuccess();
+
+    /**
+     * <pre>
+     *&#47; Error message, valid only if Refresh cache wasn't successful
+     * </pre>
+     *
+     * <code>string error = 2;</code>
+     */
+    java.lang.String getError();
+    /**
+     * <pre>
+     *&#47; Error message, valid only if Refresh cache wasn't successful
+     * </pre>
+     *
+     * <code>string error = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getErrorBytes();
+  }
+  /**
+   * <pre>
+   *&#47; Response of a PerformRefreshRequest
+   * </pre>
+   *
+   * Protobuf type {@code gauge.messages.PerformRefreshResponse}
+   */
+  public  static final class PerformRefreshResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:gauge.messages.PerformRefreshResponse)
+      PerformRefreshResponseOrBuilder {
+    // Use PerformRefreshResponse.newBuilder() to construct.
+    private PerformRefreshResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PerformRefreshResponse() {
+      success_ = false;
+      error_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PerformRefreshResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              success_ = input.readBool();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              error_ = s;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              gauge.messages.Api.PerformRefreshResponse.class, gauge.messages.Api.PerformRefreshResponse.Builder.class);
+    }
+
+    public static final int SUCCESS_FIELD_NUMBER = 1;
+    private boolean success_;
+    /**
+     * <pre>
+     *&#47; Flag indicating the success of Refresh cache operation.
+     * </pre>
+     *
+     * <code>bool success = 1;</code>
+     */
+    public boolean getSuccess() {
+      return success_;
+    }
+
+    public static final int ERROR_FIELD_NUMBER = 2;
+    private volatile java.lang.Object error_;
+    /**
+     * <pre>
+     *&#47; Error message, valid only if Refresh cache wasn't successful
+     * </pre>
+     *
+     * <code>string error = 2;</code>
+     */
+    public java.lang.String getError() {
+      java.lang.Object ref = error_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        error_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *&#47; Error message, valid only if Refresh cache wasn't successful
+     * </pre>
+     *
+     * <code>string error = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getErrorBytes() {
+      java.lang.Object ref = error_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        error_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (success_ != false) {
+        output.writeBool(1, success_);
+      }
+      if (!getErrorBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, error_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (success_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, success_);
+      }
+      if (!getErrorBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, error_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof gauge.messages.Api.PerformRefreshResponse)) {
+        return super.equals(obj);
+      }
+      gauge.messages.Api.PerformRefreshResponse other = (gauge.messages.Api.PerformRefreshResponse) obj;
+
+      boolean result = true;
+      result = result && (getSuccess()
+          == other.getSuccess());
+      result = result && getError()
+          .equals(other.getError());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getSuccess());
+      hash = (37 * hash) + ERROR_FIELD_NUMBER;
+      hash = (53 * hash) + getError().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static gauge.messages.Api.PerformRefreshResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(gauge.messages.Api.PerformRefreshResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     *&#47; Response of a PerformRefreshRequest
+     * </pre>
+     *
+     * Protobuf type {@code gauge.messages.PerformRefreshResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:gauge.messages.PerformRefreshResponse)
+        gauge.messages.Api.PerformRefreshResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                gauge.messages.Api.PerformRefreshResponse.class, gauge.messages.Api.PerformRefreshResponse.Builder.class);
+      }
+
+      // Construct using gauge.messages.Api.PerformRefreshResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        success_ = false;
+
+        error_ = "";
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return gauge.messages.Api.internal_static_gauge_messages_PerformRefreshResponse_descriptor;
+      }
+
+      public gauge.messages.Api.PerformRefreshResponse getDefaultInstanceForType() {
+        return gauge.messages.Api.PerformRefreshResponse.getDefaultInstance();
+      }
+
+      public gauge.messages.Api.PerformRefreshResponse build() {
+        gauge.messages.Api.PerformRefreshResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public gauge.messages.Api.PerformRefreshResponse buildPartial() {
+        gauge.messages.Api.PerformRefreshResponse result = new gauge.messages.Api.PerformRefreshResponse(this);
+        result.success_ = success_;
+        result.error_ = error_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof gauge.messages.Api.PerformRefreshResponse) {
+          return mergeFrom((gauge.messages.Api.PerformRefreshResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(gauge.messages.Api.PerformRefreshResponse other) {
+        if (other == gauge.messages.Api.PerformRefreshResponse.getDefaultInstance()) return this;
+        if (other.getSuccess() != false) {
+          setSuccess(other.getSuccess());
+        }
+        if (!other.getError().isEmpty()) {
+          error_ = other.error_;
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        gauge.messages.Api.PerformRefreshResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (gauge.messages.Api.PerformRefreshResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private boolean success_ ;
+      /**
+       * <pre>
+       *&#47; Flag indicating the success of Refresh cache operation.
+       * </pre>
+       *
+       * <code>bool success = 1;</code>
+       */
+      public boolean getSuccess() {
+        return success_;
+      }
+      /**
+       * <pre>
+       *&#47; Flag indicating the success of Refresh cache operation.
+       * </pre>
+       *
+       * <code>bool success = 1;</code>
+       */
+      public Builder setSuccess(boolean value) {
+        
+        success_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; Flag indicating the success of Refresh cache operation.
+       * </pre>
+       *
+       * <code>bool success = 1;</code>
+       */
+      public Builder clearSuccess() {
+        
+        success_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object error_ = "";
+      /**
+       * <pre>
+       *&#47; Error message, valid only if Refresh cache wasn't successful
+       * </pre>
+       *
+       * <code>string error = 2;</code>
+       */
+      public java.lang.String getError() {
+        java.lang.Object ref = error_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          error_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *&#47; Error message, valid only if Refresh cache wasn't successful
+       * </pre>
+       *
+       * <code>string error = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getErrorBytes() {
+        java.lang.Object ref = error_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          error_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *&#47; Error message, valid only if Refresh cache wasn't successful
+       * </pre>
+       *
+       * <code>string error = 2;</code>
+       */
+      public Builder setError(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        error_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; Error message, valid only if Refresh cache wasn't successful
+       * </pre>
+       *
+       * <code>string error = 2;</code>
+       */
+      public Builder clearError() {
+        
+        error_ = getDefaultInstance().getError();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; Error message, valid only if Refresh cache wasn't successful
+       * </pre>
+       *
+       * <code>string error = 2;</code>
+       */
+      public Builder setErrorBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        error_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:gauge.messages.PerformRefreshResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:gauge.messages.PerformRefreshResponse)
+    private static final gauge.messages.Api.PerformRefreshResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new gauge.messages.Api.PerformRefreshResponse();
+    }
+
+    public static gauge.messages.Api.PerformRefreshResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PerformRefreshResponse>
+        PARSER = new com.google.protobuf.AbstractParser<PerformRefreshResponse>() {
+      public PerformRefreshResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PerformRefreshResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PerformRefreshResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PerformRefreshResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public gauge.messages.Api.PerformRefreshResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface ExtractConceptInfoRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:gauge.messages.ExtractConceptInfoRequest)
       com.google.protobuf.MessageOrBuilder {
@@ -13119,7 +13819,7 @@ public final class Api {
      *&#47; The text blob containing steps that should be refactored to concept.
      * </pre>
      *
-     * <code>optional string text = 1;</code>
+     * <code>string text = 1;</code>
      */
     java.lang.String getText();
     /**
@@ -13127,7 +13827,7 @@ public final class Api {
      *&#47; The text blob containing steps that should be refactored to concept.
      * </pre>
      *
-     * <code>optional string text = 1;</code>
+     * <code>string text = 1;</code>
      */
     com.google.protobuf.ByteString
         getTextBytes();
@@ -13213,7 +13913,7 @@ public final class Api {
      *&#47; The text blob containing steps that should be refactored to concept.
      * </pre>
      *
-     * <code>optional string text = 1;</code>
+     * <code>string text = 1;</code>
      */
     public java.lang.String getText() {
       java.lang.Object ref = text_;
@@ -13232,7 +13932,7 @@ public final class Api {
      *&#47; The text blob containing steps that should be refactored to concept.
      * </pre>
      *
-     * <code>optional string text = 1;</code>
+     * <code>string text = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTextBytes() {
@@ -13300,7 +14000,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TEXT_FIELD_NUMBER;
       hash = (53 * hash) + getText().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -13308,6 +14008,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.ExtractConceptInfoRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.ExtractConceptInfoRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.ExtractConceptInfoRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -13528,7 +14239,7 @@ public final class Api {
        *&#47; The text blob containing steps that should be refactored to concept.
        * </pre>
        *
-       * <code>optional string text = 1;</code>
+       * <code>string text = 1;</code>
        */
       public java.lang.String getText() {
         java.lang.Object ref = text_;
@@ -13547,7 +14258,7 @@ public final class Api {
        *&#47; The text blob containing steps that should be refactored to concept.
        * </pre>
        *
-       * <code>optional string text = 1;</code>
+       * <code>string text = 1;</code>
        */
       public com.google.protobuf.ByteString
           getTextBytes() {
@@ -13567,7 +14278,7 @@ public final class Api {
        *&#47; The text blob containing steps that should be refactored to concept.
        * </pre>
        *
-       * <code>optional string text = 1;</code>
+       * <code>string text = 1;</code>
        */
       public Builder setText(
           java.lang.String value) {
@@ -13584,7 +14295,7 @@ public final class Api {
        *&#47; The text blob containing steps that should be refactored to concept.
        * </pre>
        *
-       * <code>optional string text = 1;</code>
+       * <code>string text = 1;</code>
        */
       public Builder clearText() {
         
@@ -13597,7 +14308,7 @@ public final class Api {
        *&#47; The text blob containing steps that should be refactored to concept.
        * </pre>
        *
-       * <code>optional string text = 1;</code>
+       * <code>string text = 1;</code>
        */
       public Builder setTextBytes(
           com.google.protobuf.ByteString value) {
@@ -13668,7 +14379,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     boolean hasConceptName();
     /**
@@ -13676,7 +14387,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     gauge.messages.Api.step getConceptName();
     /**
@@ -13684,7 +14395,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     gauge.messages.Api.stepOrBuilder getConceptNameOrBuilder();
 
@@ -13737,7 +14448,7 @@ public final class Api {
      *&#47; Flag indicating if refactoring should be done across project
      * </pre>
      *
-     * <code>optional bool changeAcrossProject = 3;</code>
+     * <code>bool changeAcrossProject = 3;</code>
      */
     boolean getChangeAcrossProject();
 
@@ -13746,7 +14457,7 @@ public final class Api {
      *&#47; The concept filename in which extracted concept will be added
      * </pre>
      *
-     * <code>optional string conceptFileName = 4;</code>
+     * <code>string conceptFileName = 4;</code>
      */
     java.lang.String getConceptFileName();
     /**
@@ -13754,7 +14465,7 @@ public final class Api {
      *&#47; The concept filename in which extracted concept will be added
      * </pre>
      *
-     * <code>optional string conceptFileName = 4;</code>
+     * <code>string conceptFileName = 4;</code>
      */
     com.google.protobuf.ByteString
         getConceptFileNameBytes();
@@ -13764,7 +14475,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     boolean hasSelectedTextInfo();
     /**
@@ -13772,7 +14483,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     gauge.messages.Api.textInfo getSelectedTextInfo();
     /**
@@ -13780,7 +14491,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     gauge.messages.Api.textInfoOrBuilder getSelectedTextInfoOrBuilder();
   }
@@ -13910,7 +14621,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     public boolean hasConceptName() {
       return conceptName_ != null;
@@ -13920,7 +14631,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     public gauge.messages.Api.step getConceptName() {
       return conceptName_ == null ? gauge.messages.Api.step.getDefaultInstance() : conceptName_;
@@ -13930,7 +14641,7 @@ public final class Api {
      *&#47; The Concept name given by the user
      * </pre>
      *
-     * <code>optional .gauge.messages.step conceptName = 1;</code>
+     * <code>.gauge.messages.step conceptName = 1;</code>
      */
     public gauge.messages.Api.stepOrBuilder getConceptNameOrBuilder() {
       return getConceptName();
@@ -13998,7 +14709,7 @@ public final class Api {
      *&#47; Flag indicating if refactoring should be done across project
      * </pre>
      *
-     * <code>optional bool changeAcrossProject = 3;</code>
+     * <code>bool changeAcrossProject = 3;</code>
      */
     public boolean getChangeAcrossProject() {
       return changeAcrossProject_;
@@ -14011,7 +14722,7 @@ public final class Api {
      *&#47; The concept filename in which extracted concept will be added
      * </pre>
      *
-     * <code>optional string conceptFileName = 4;</code>
+     * <code>string conceptFileName = 4;</code>
      */
     public java.lang.String getConceptFileName() {
       java.lang.Object ref = conceptFileName_;
@@ -14030,7 +14741,7 @@ public final class Api {
      *&#47; The concept filename in which extracted concept will be added
      * </pre>
      *
-     * <code>optional string conceptFileName = 4;</code>
+     * <code>string conceptFileName = 4;</code>
      */
     public com.google.protobuf.ByteString
         getConceptFileNameBytes() {
@@ -14053,7 +14764,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     public boolean hasSelectedTextInfo() {
       return selectedTextInfo_ != null;
@@ -14063,7 +14774,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     public gauge.messages.Api.textInfo getSelectedTextInfo() {
       return selectedTextInfo_ == null ? gauge.messages.Api.textInfo.getDefaultInstance() : selectedTextInfo_;
@@ -14073,7 +14784,7 @@ public final class Api {
      *&#47; Info related to selected text, only if changeAcrossProject is false
      * </pre>
      *
-     * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+     * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
      */
     public gauge.messages.Api.textInfoOrBuilder getSelectedTextInfoOrBuilder() {
       return getSelectedTextInfo();
@@ -14173,7 +14884,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasConceptName()) {
         hash = (37 * hash) + CONCEPTNAME_FIELD_NUMBER;
         hash = (53 * hash) + getConceptName().hashCode();
@@ -14196,6 +14907,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.ExtractConceptRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.ExtractConceptRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.ExtractConceptRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -14497,7 +15219,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public boolean hasConceptName() {
         return conceptNameBuilder_ != null || conceptName_ != null;
@@ -14507,7 +15229,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public gauge.messages.Api.step getConceptName() {
         if (conceptNameBuilder_ == null) {
@@ -14521,7 +15243,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public Builder setConceptName(gauge.messages.Api.step value) {
         if (conceptNameBuilder_ == null) {
@@ -14541,7 +15263,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public Builder setConceptName(
           gauge.messages.Api.step.Builder builderForValue) {
@@ -14559,7 +15281,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public Builder mergeConceptName(gauge.messages.Api.step value) {
         if (conceptNameBuilder_ == null) {
@@ -14581,7 +15303,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public Builder clearConceptName() {
         if (conceptNameBuilder_ == null) {
@@ -14599,7 +15321,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public gauge.messages.Api.step.Builder getConceptNameBuilder() {
         
@@ -14611,7 +15333,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       public gauge.messages.Api.stepOrBuilder getConceptNameOrBuilder() {
         if (conceptNameBuilder_ != null) {
@@ -14626,7 +15348,7 @@ public final class Api {
        *&#47; The Concept name given by the user
        * </pre>
        *
-       * <code>optional .gauge.messages.step conceptName = 1;</code>
+       * <code>.gauge.messages.step conceptName = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.step, gauge.messages.Api.step.Builder, gauge.messages.Api.stepOrBuilder> 
@@ -14960,7 +15682,7 @@ public final class Api {
        *&#47; Flag indicating if refactoring should be done across project
        * </pre>
        *
-       * <code>optional bool changeAcrossProject = 3;</code>
+       * <code>bool changeAcrossProject = 3;</code>
        */
       public boolean getChangeAcrossProject() {
         return changeAcrossProject_;
@@ -14970,7 +15692,7 @@ public final class Api {
        *&#47; Flag indicating if refactoring should be done across project
        * </pre>
        *
-       * <code>optional bool changeAcrossProject = 3;</code>
+       * <code>bool changeAcrossProject = 3;</code>
        */
       public Builder setChangeAcrossProject(boolean value) {
         
@@ -14983,7 +15705,7 @@ public final class Api {
        *&#47; Flag indicating if refactoring should be done across project
        * </pre>
        *
-       * <code>optional bool changeAcrossProject = 3;</code>
+       * <code>bool changeAcrossProject = 3;</code>
        */
       public Builder clearChangeAcrossProject() {
         
@@ -14998,7 +15720,7 @@ public final class Api {
        *&#47; The concept filename in which extracted concept will be added
        * </pre>
        *
-       * <code>optional string conceptFileName = 4;</code>
+       * <code>string conceptFileName = 4;</code>
        */
       public java.lang.String getConceptFileName() {
         java.lang.Object ref = conceptFileName_;
@@ -15017,7 +15739,7 @@ public final class Api {
        *&#47; The concept filename in which extracted concept will be added
        * </pre>
        *
-       * <code>optional string conceptFileName = 4;</code>
+       * <code>string conceptFileName = 4;</code>
        */
       public com.google.protobuf.ByteString
           getConceptFileNameBytes() {
@@ -15037,7 +15759,7 @@ public final class Api {
        *&#47; The concept filename in which extracted concept will be added
        * </pre>
        *
-       * <code>optional string conceptFileName = 4;</code>
+       * <code>string conceptFileName = 4;</code>
        */
       public Builder setConceptFileName(
           java.lang.String value) {
@@ -15054,7 +15776,7 @@ public final class Api {
        *&#47; The concept filename in which extracted concept will be added
        * </pre>
        *
-       * <code>optional string conceptFileName = 4;</code>
+       * <code>string conceptFileName = 4;</code>
        */
       public Builder clearConceptFileName() {
         
@@ -15067,7 +15789,7 @@ public final class Api {
        *&#47; The concept filename in which extracted concept will be added
        * </pre>
        *
-       * <code>optional string conceptFileName = 4;</code>
+       * <code>string conceptFileName = 4;</code>
        */
       public Builder setConceptFileNameBytes(
           com.google.protobuf.ByteString value) {
@@ -15089,7 +15811,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public boolean hasSelectedTextInfo() {
         return selectedTextInfoBuilder_ != null || selectedTextInfo_ != null;
@@ -15099,7 +15821,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public gauge.messages.Api.textInfo getSelectedTextInfo() {
         if (selectedTextInfoBuilder_ == null) {
@@ -15113,7 +15835,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public Builder setSelectedTextInfo(gauge.messages.Api.textInfo value) {
         if (selectedTextInfoBuilder_ == null) {
@@ -15133,7 +15855,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public Builder setSelectedTextInfo(
           gauge.messages.Api.textInfo.Builder builderForValue) {
@@ -15151,7 +15873,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public Builder mergeSelectedTextInfo(gauge.messages.Api.textInfo value) {
         if (selectedTextInfoBuilder_ == null) {
@@ -15173,7 +15895,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public Builder clearSelectedTextInfo() {
         if (selectedTextInfoBuilder_ == null) {
@@ -15191,7 +15913,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public gauge.messages.Api.textInfo.Builder getSelectedTextInfoBuilder() {
         
@@ -15203,7 +15925,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       public gauge.messages.Api.textInfoOrBuilder getSelectedTextInfoOrBuilder() {
         if (selectedTextInfoBuilder_ != null) {
@@ -15218,7 +15940,7 @@ public final class Api {
        *&#47; Info related to selected text, only if changeAcrossProject is false
        * </pre>
        *
-       * <code>optional .gauge.messages.textInfo selectedTextInfo = 5;</code>
+       * <code>.gauge.messages.textInfo selectedTextInfo = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.textInfo, gauge.messages.Api.textInfo.Builder, gauge.messages.Api.textInfoOrBuilder> 
@@ -15291,7 +16013,7 @@ public final class Api {
      *&#47; The filename from where concept is being extracted
      * </pre>
      *
-     * <code>optional string fileName = 1;</code>
+     * <code>string fileName = 1;</code>
      */
     java.lang.String getFileName();
     /**
@@ -15299,7 +16021,7 @@ public final class Api {
      *&#47; The filename from where concept is being extracted
      * </pre>
      *
-     * <code>optional string fileName = 1;</code>
+     * <code>string fileName = 1;</code>
      */
     com.google.protobuf.ByteString
         getFileNameBytes();
@@ -15309,12 +16031,12 @@ public final class Api {
      *&#47; storing the starting and ending line number of selected text
      * </pre>
      *
-     * <code>optional int32 startingLineNo = 2;</code>
+     * <code>int32 startingLineNo = 2;</code>
      */
     int getStartingLineNo();
 
     /**
-     * <code>optional int32 endLineNo = 3;</code>
+     * <code>int32 endLineNo = 3;</code>
      */
     int getEndLineNo();
   }
@@ -15406,7 +16128,7 @@ public final class Api {
      *&#47; The filename from where concept is being extracted
      * </pre>
      *
-     * <code>optional string fileName = 1;</code>
+     * <code>string fileName = 1;</code>
      */
     public java.lang.String getFileName() {
       java.lang.Object ref = fileName_;
@@ -15425,7 +16147,7 @@ public final class Api {
      *&#47; The filename from where concept is being extracted
      * </pre>
      *
-     * <code>optional string fileName = 1;</code>
+     * <code>string fileName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getFileNameBytes() {
@@ -15448,7 +16170,7 @@ public final class Api {
      *&#47; storing the starting and ending line number of selected text
      * </pre>
      *
-     * <code>optional int32 startingLineNo = 2;</code>
+     * <code>int32 startingLineNo = 2;</code>
      */
     public int getStartingLineNo() {
       return startingLineNo_;
@@ -15457,7 +16179,7 @@ public final class Api {
     public static final int ENDLINENO_FIELD_NUMBER = 3;
     private int endLineNo_;
     /**
-     * <code>optional int32 endLineNo = 3;</code>
+     * <code>int32 endLineNo = 3;</code>
      */
     public int getEndLineNo() {
       return endLineNo_;
@@ -15533,7 +16255,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + FILENAME_FIELD_NUMBER;
       hash = (53 * hash) + getFileName().hashCode();
       hash = (37 * hash) + STARTINGLINENO_FIELD_NUMBER;
@@ -15545,6 +16267,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.textInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.textInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.textInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -15772,7 +16505,7 @@ public final class Api {
        *&#47; The filename from where concept is being extracted
        * </pre>
        *
-       * <code>optional string fileName = 1;</code>
+       * <code>string fileName = 1;</code>
        */
       public java.lang.String getFileName() {
         java.lang.Object ref = fileName_;
@@ -15791,7 +16524,7 @@ public final class Api {
        *&#47; The filename from where concept is being extracted
        * </pre>
        *
-       * <code>optional string fileName = 1;</code>
+       * <code>string fileName = 1;</code>
        */
       public com.google.protobuf.ByteString
           getFileNameBytes() {
@@ -15811,7 +16544,7 @@ public final class Api {
        *&#47; The filename from where concept is being extracted
        * </pre>
        *
-       * <code>optional string fileName = 1;</code>
+       * <code>string fileName = 1;</code>
        */
       public Builder setFileName(
           java.lang.String value) {
@@ -15828,7 +16561,7 @@ public final class Api {
        *&#47; The filename from where concept is being extracted
        * </pre>
        *
-       * <code>optional string fileName = 1;</code>
+       * <code>string fileName = 1;</code>
        */
       public Builder clearFileName() {
         
@@ -15841,7 +16574,7 @@ public final class Api {
        *&#47; The filename from where concept is being extracted
        * </pre>
        *
-       * <code>optional string fileName = 1;</code>
+       * <code>string fileName = 1;</code>
        */
       public Builder setFileNameBytes(
           com.google.protobuf.ByteString value) {
@@ -15861,7 +16594,7 @@ public final class Api {
        *&#47; storing the starting and ending line number of selected text
        * </pre>
        *
-       * <code>optional int32 startingLineNo = 2;</code>
+       * <code>int32 startingLineNo = 2;</code>
        */
       public int getStartingLineNo() {
         return startingLineNo_;
@@ -15871,7 +16604,7 @@ public final class Api {
        *&#47; storing the starting and ending line number of selected text
        * </pre>
        *
-       * <code>optional int32 startingLineNo = 2;</code>
+       * <code>int32 startingLineNo = 2;</code>
        */
       public Builder setStartingLineNo(int value) {
         
@@ -15884,7 +16617,7 @@ public final class Api {
        *&#47; storing the starting and ending line number of selected text
        * </pre>
        *
-       * <code>optional int32 startingLineNo = 2;</code>
+       * <code>int32 startingLineNo = 2;</code>
        */
       public Builder clearStartingLineNo() {
         
@@ -15895,13 +16628,13 @@ public final class Api {
 
       private int endLineNo_ ;
       /**
-       * <code>optional int32 endLineNo = 3;</code>
+       * <code>int32 endLineNo = 3;</code>
        */
       public int getEndLineNo() {
         return endLineNo_;
       }
       /**
-       * <code>optional int32 endLineNo = 3;</code>
+       * <code>int32 endLineNo = 3;</code>
        */
       public Builder setEndLineNo(int value) {
         
@@ -15910,7 +16643,7 @@ public final class Api {
         return this;
       }
       /**
-       * <code>optional int32 endLineNo = 3;</code>
+       * <code>int32 endLineNo = 3;</code>
        */
       public Builder clearEndLineNo() {
         
@@ -15976,7 +16709,7 @@ public final class Api {
      *&#47; name of the step
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
@@ -15984,7 +16717,7 @@ public final class Api {
      *&#47; name of the step
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
@@ -15994,7 +16727,7 @@ public final class Api {
      *&#47;  table present in step as parameter
      * </pre>
      *
-     * <code>optional string table = 2;</code>
+     * <code>string table = 2;</code>
      */
     java.lang.String getTable();
     /**
@@ -16002,7 +16735,7 @@ public final class Api {
      *&#47;  table present in step as parameter
      * </pre>
      *
-     * <code>optional string table = 2;</code>
+     * <code>string table = 2;</code>
      */
     com.google.protobuf.ByteString
         getTableBytes();
@@ -16012,7 +16745,7 @@ public final class Api {
      *&#47; name of table in concept heading, if it comes as a param to concept
      * </pre>
      *
-     * <code>optional string paramTableName = 3;</code>
+     * <code>string paramTableName = 3;</code>
      */
     java.lang.String getParamTableName();
     /**
@@ -16020,7 +16753,7 @@ public final class Api {
      *&#47; name of table in concept heading, if it comes as a param to concept
      * </pre>
      *
-     * <code>optional string paramTableName = 3;</code>
+     * <code>string paramTableName = 3;</code>
      */
     com.google.protobuf.ByteString
         getParamTableNameBytes();
@@ -16115,7 +16848,7 @@ public final class Api {
      *&#47; name of the step
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -16134,7 +16867,7 @@ public final class Api {
      *&#47; name of the step
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -16157,7 +16890,7 @@ public final class Api {
      *&#47;  table present in step as parameter
      * </pre>
      *
-     * <code>optional string table = 2;</code>
+     * <code>string table = 2;</code>
      */
     public java.lang.String getTable() {
       java.lang.Object ref = table_;
@@ -16176,7 +16909,7 @@ public final class Api {
      *&#47;  table present in step as parameter
      * </pre>
      *
-     * <code>optional string table = 2;</code>
+     * <code>string table = 2;</code>
      */
     public com.google.protobuf.ByteString
         getTableBytes() {
@@ -16199,7 +16932,7 @@ public final class Api {
      *&#47; name of table in concept heading, if it comes as a param to concept
      * </pre>
      *
-     * <code>optional string paramTableName = 3;</code>
+     * <code>string paramTableName = 3;</code>
      */
     public java.lang.String getParamTableName() {
       java.lang.Object ref = paramTableName_;
@@ -16218,7 +16951,7 @@ public final class Api {
      *&#47; name of table in concept heading, if it comes as a param to concept
      * </pre>
      *
-     * <code>optional string paramTableName = 3;</code>
+     * <code>string paramTableName = 3;</code>
      */
     public com.google.protobuf.ByteString
         getParamTableNameBytes() {
@@ -16302,7 +17035,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + TABLE_FIELD_NUMBER;
@@ -16314,6 +17047,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.step parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.step parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.step parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -16543,7 +17287,7 @@ public final class Api {
        *&#47; name of the step
        * </pre>
        *
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -16562,7 +17306,7 @@ public final class Api {
        *&#47; name of the step
        * </pre>
        *
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -16582,7 +17326,7 @@ public final class Api {
        *&#47; name of the step
        * </pre>
        *
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -16599,7 +17343,7 @@ public final class Api {
        *&#47; name of the step
        * </pre>
        *
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -16612,7 +17356,7 @@ public final class Api {
        *&#47; name of the step
        * </pre>
        *
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -16632,7 +17376,7 @@ public final class Api {
        *&#47;  table present in step as parameter
        * </pre>
        *
-       * <code>optional string table = 2;</code>
+       * <code>string table = 2;</code>
        */
       public java.lang.String getTable() {
         java.lang.Object ref = table_;
@@ -16651,7 +17395,7 @@ public final class Api {
        *&#47;  table present in step as parameter
        * </pre>
        *
-       * <code>optional string table = 2;</code>
+       * <code>string table = 2;</code>
        */
       public com.google.protobuf.ByteString
           getTableBytes() {
@@ -16671,7 +17415,7 @@ public final class Api {
        *&#47;  table present in step as parameter
        * </pre>
        *
-       * <code>optional string table = 2;</code>
+       * <code>string table = 2;</code>
        */
       public Builder setTable(
           java.lang.String value) {
@@ -16688,7 +17432,7 @@ public final class Api {
        *&#47;  table present in step as parameter
        * </pre>
        *
-       * <code>optional string table = 2;</code>
+       * <code>string table = 2;</code>
        */
       public Builder clearTable() {
         
@@ -16701,7 +17445,7 @@ public final class Api {
        *&#47;  table present in step as parameter
        * </pre>
        *
-       * <code>optional string table = 2;</code>
+       * <code>string table = 2;</code>
        */
       public Builder setTableBytes(
           com.google.protobuf.ByteString value) {
@@ -16721,7 +17465,7 @@ public final class Api {
        *&#47; name of table in concept heading, if it comes as a param to concept
        * </pre>
        *
-       * <code>optional string paramTableName = 3;</code>
+       * <code>string paramTableName = 3;</code>
        */
       public java.lang.String getParamTableName() {
         java.lang.Object ref = paramTableName_;
@@ -16740,7 +17484,7 @@ public final class Api {
        *&#47; name of table in concept heading, if it comes as a param to concept
        * </pre>
        *
-       * <code>optional string paramTableName = 3;</code>
+       * <code>string paramTableName = 3;</code>
        */
       public com.google.protobuf.ByteString
           getParamTableNameBytes() {
@@ -16760,7 +17504,7 @@ public final class Api {
        *&#47; name of table in concept heading, if it comes as a param to concept
        * </pre>
        *
-       * <code>optional string paramTableName = 3;</code>
+       * <code>string paramTableName = 3;</code>
        */
       public Builder setParamTableName(
           java.lang.String value) {
@@ -16777,7 +17521,7 @@ public final class Api {
        *&#47; name of table in concept heading, if it comes as a param to concept
        * </pre>
        *
-       * <code>optional string paramTableName = 3;</code>
+       * <code>string paramTableName = 3;</code>
        */
       public Builder clearParamTableName() {
         
@@ -16790,7 +17534,7 @@ public final class Api {
        *&#47; name of table in concept heading, if it comes as a param to concept
        * </pre>
        *
-       * <code>optional string paramTableName = 3;</code>
+       * <code>string paramTableName = 3;</code>
        */
       public Builder setParamTableNameBytes(
           com.google.protobuf.ByteString value) {
@@ -16861,7 +17605,7 @@ public final class Api {
      *&#47; Flag indicating Success
      * </pre>
      *
-     * <code>optional bool isSuccess = 1;</code>
+     * <code>bool isSuccess = 1;</code>
      */
     boolean getIsSuccess();
 
@@ -16870,7 +17614,7 @@ public final class Api {
      *&#47; Error message if the refactoring was unsuccessful.
      * </pre>
      *
-     * <code>optional string error = 2;</code>
+     * <code>string error = 2;</code>
      */
     java.lang.String getError();
     /**
@@ -16878,7 +17622,7 @@ public final class Api {
      *&#47; Error message if the refactoring was unsuccessful.
      * </pre>
      *
-     * <code>optional string error = 2;</code>
+     * <code>string error = 2;</code>
      */
     com.google.protobuf.ByteString
         getErrorBytes();
@@ -17018,7 +17762,7 @@ public final class Api {
      *&#47; Flag indicating Success
      * </pre>
      *
-     * <code>optional bool isSuccess = 1;</code>
+     * <code>bool isSuccess = 1;</code>
      */
     public boolean getIsSuccess() {
       return isSuccess_;
@@ -17031,7 +17775,7 @@ public final class Api {
      *&#47; Error message if the refactoring was unsuccessful.
      * </pre>
      *
-     * <code>optional string error = 2;</code>
+     * <code>string error = 2;</code>
      */
     public java.lang.String getError() {
       java.lang.Object ref = error_;
@@ -17050,7 +17794,7 @@ public final class Api {
      *&#47; Error message if the refactoring was unsuccessful.
      * </pre>
      *
-     * <code>optional string error = 2;</code>
+     * <code>string error = 2;</code>
      */
     public com.google.protobuf.ByteString
         getErrorBytes() {
@@ -17185,7 +17929,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ISSUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
@@ -17200,6 +17944,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.ExtractConceptResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.ExtractConceptResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.ExtractConceptResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -17446,7 +18201,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool isSuccess = 1;</code>
+       * <code>bool isSuccess = 1;</code>
        */
       public boolean getIsSuccess() {
         return isSuccess_;
@@ -17456,7 +18211,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool isSuccess = 1;</code>
+       * <code>bool isSuccess = 1;</code>
        */
       public Builder setIsSuccess(boolean value) {
         
@@ -17469,7 +18224,7 @@ public final class Api {
        *&#47; Flag indicating Success
        * </pre>
        *
-       * <code>optional bool isSuccess = 1;</code>
+       * <code>bool isSuccess = 1;</code>
        */
       public Builder clearIsSuccess() {
         
@@ -17484,7 +18239,7 @@ public final class Api {
        *&#47; Error message if the refactoring was unsuccessful.
        * </pre>
        *
-       * <code>optional string error = 2;</code>
+       * <code>string error = 2;</code>
        */
       public java.lang.String getError() {
         java.lang.Object ref = error_;
@@ -17503,7 +18258,7 @@ public final class Api {
        *&#47; Error message if the refactoring was unsuccessful.
        * </pre>
        *
-       * <code>optional string error = 2;</code>
+       * <code>string error = 2;</code>
        */
       public com.google.protobuf.ByteString
           getErrorBytes() {
@@ -17523,7 +18278,7 @@ public final class Api {
        *&#47; Error message if the refactoring was unsuccessful.
        * </pre>
        *
-       * <code>optional string error = 2;</code>
+       * <code>string error = 2;</code>
        */
       public Builder setError(
           java.lang.String value) {
@@ -17540,7 +18295,7 @@ public final class Api {
        *&#47; Error message if the refactoring was unsuccessful.
        * </pre>
        *
-       * <code>optional string error = 2;</code>
+       * <code>string error = 2;</code>
        */
       public Builder clearError() {
         
@@ -17553,7 +18308,7 @@ public final class Api {
        *&#47; Error message if the refactoring was unsuccessful.
        * </pre>
        *
-       * <code>optional string error = 2;</code>
+       * <code>string error = 2;</code>
        */
       public Builder setErrorBytes(
           com.google.protobuf.ByteString value) {
@@ -17965,7 +18720,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getSpecsCount() > 0) {
         hash = (37 * hash) + SPECS_FIELD_NUMBER;
         hash = (53 * hash) + getSpecsList().hashCode();
@@ -17975,6 +18730,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.FormatSpecsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.FormatSpecsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.FormatSpecsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -18704,7 +19470,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getErrorsCount() > 0) {
         hash = (37 * hash) + ERRORS_FIELD_NUMBER;
         hash = (53 * hash) + getErrorsList().hashCode();
@@ -18718,6 +19484,17 @@ public final class Api {
       return hash;
     }
 
+    public static gauge.messages.Api.FormatSpecsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.FormatSpecsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.FormatSpecsResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -19381,12 +20158,23 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.UnsupportedApiMessageResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.UnsupportedApiMessageResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.UnsupportedApiMessageResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -19650,7 +20438,7 @@ public final class Api {
      *&#47; Type of API call being made
      * </pre>
      *
-     * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+     * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
      */
     int getMessageTypeValue();
     /**
@@ -19658,7 +20446,7 @@ public final class Api {
      *&#47; Type of API call being made
      * </pre>
      *
-     * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+     * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
      */
     gauge.messages.Api.APIMessage.APIMessageType getMessageType();
 
@@ -19668,7 +20456,7 @@ public final class Api {
      * / This is used to synchronize messages &amp; responses
      * </pre>
      *
-     * <code>optional int64 messageId = 2;</code>
+     * <code>int64 messageId = 2;</code>
      */
     long getMessageId();
 
@@ -19677,7 +20465,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     boolean hasProjectRootRequest();
     /**
@@ -19685,7 +20473,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     gauge.messages.Api.GetProjectRootRequest getProjectRootRequest();
     /**
@@ -19693,7 +20481,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     gauge.messages.Api.GetProjectRootRequestOrBuilder getProjectRootRequestOrBuilder();
 
@@ -19702,7 +20490,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     boolean hasProjectRootResponse();
     /**
@@ -19710,7 +20498,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     gauge.messages.Api.GetProjectRootResponse getProjectRootResponse();
     /**
@@ -19718,7 +20506,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     gauge.messages.Api.GetProjectRootResponseOrBuilder getProjectRootResponseOrBuilder();
 
@@ -19727,7 +20515,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     boolean hasInstallationRootRequest();
     /**
@@ -19735,7 +20523,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     gauge.messages.Api.GetInstallationRootRequest getInstallationRootRequest();
     /**
@@ -19743,7 +20531,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     gauge.messages.Api.GetInstallationRootRequestOrBuilder getInstallationRootRequestOrBuilder();
 
@@ -19752,7 +20540,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     boolean hasInstallationRootResponse();
     /**
@@ -19760,7 +20548,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     gauge.messages.Api.GetInstallationRootResponse getInstallationRootResponse();
     /**
@@ -19768,7 +20556,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     gauge.messages.Api.GetInstallationRootResponseOrBuilder getInstallationRootResponseOrBuilder();
 
@@ -19777,7 +20565,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     boolean hasAllStepsRequest();
     /**
@@ -19785,7 +20573,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     gauge.messages.Api.GetAllStepsRequest getAllStepsRequest();
     /**
@@ -19793,7 +20581,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     gauge.messages.Api.GetAllStepsRequestOrBuilder getAllStepsRequestOrBuilder();
 
@@ -19802,7 +20590,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     boolean hasAllStepsResponse();
     /**
@@ -19810,7 +20598,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     gauge.messages.Api.GetAllStepsResponse getAllStepsResponse();
     /**
@@ -19818,7 +20606,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     gauge.messages.Api.GetAllStepsResponseOrBuilder getAllStepsResponseOrBuilder();
 
@@ -19827,7 +20615,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     boolean hasSpecsRequest();
     /**
@@ -19835,7 +20623,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     gauge.messages.Api.SpecsRequest getSpecsRequest();
     /**
@@ -19843,7 +20631,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     gauge.messages.Api.SpecsRequestOrBuilder getSpecsRequestOrBuilder();
 
@@ -19852,7 +20640,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     boolean hasSpecsResponse();
     /**
@@ -19860,7 +20648,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     gauge.messages.Api.SpecsResponse getSpecsResponse();
     /**
@@ -19868,7 +20656,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     gauge.messages.Api.SpecsResponseOrBuilder getSpecsResponseOrBuilder();
 
@@ -19877,7 +20665,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     boolean hasStepValueRequest();
     /**
@@ -19885,7 +20673,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     gauge.messages.Api.GetStepValueRequest getStepValueRequest();
     /**
@@ -19893,7 +20681,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     gauge.messages.Api.GetStepValueRequestOrBuilder getStepValueRequestOrBuilder();
 
@@ -19902,7 +20690,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     boolean hasStepValueResponse();
     /**
@@ -19910,7 +20698,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     gauge.messages.Api.GetStepValueResponse getStepValueResponse();
     /**
@@ -19918,7 +20706,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     gauge.messages.Api.GetStepValueResponseOrBuilder getStepValueResponseOrBuilder();
 
@@ -19927,7 +20715,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     boolean hasLibPathRequest();
     /**
@@ -19935,7 +20723,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     gauge.messages.Api.GetLanguagePluginLibPathRequest getLibPathRequest();
     /**
@@ -19943,7 +20731,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     gauge.messages.Api.GetLanguagePluginLibPathRequestOrBuilder getLibPathRequestOrBuilder();
 
@@ -19952,7 +20740,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     boolean hasLibPathResponse();
     /**
@@ -19960,7 +20748,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     gauge.messages.Api.GetLanguagePluginLibPathResponse getLibPathResponse();
     /**
@@ -19968,7 +20756,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     gauge.messages.Api.GetLanguagePluginLibPathResponseOrBuilder getLibPathResponseOrBuilder();
 
@@ -19977,7 +20765,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     boolean hasError();
     /**
@@ -19985,7 +20773,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     gauge.messages.Api.ErrorResponse getError();
     /**
@@ -19993,7 +20781,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     gauge.messages.Api.ErrorResponseOrBuilder getErrorOrBuilder();
 
@@ -20002,7 +20790,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     boolean hasAllConceptsRequest();
     /**
@@ -20010,7 +20798,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     gauge.messages.Api.GetAllConceptsRequest getAllConceptsRequest();
     /**
@@ -20018,7 +20806,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     gauge.messages.Api.GetAllConceptsRequestOrBuilder getAllConceptsRequestOrBuilder();
 
@@ -20027,7 +20815,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     boolean hasAllConceptsResponse();
     /**
@@ -20035,7 +20823,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     gauge.messages.Api.GetAllConceptsResponse getAllConceptsResponse();
     /**
@@ -20043,7 +20831,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     gauge.messages.Api.GetAllConceptsResponseOrBuilder getAllConceptsResponseOrBuilder();
 
@@ -20052,7 +20840,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     boolean hasPerformRefactoringRequest();
     /**
@@ -20060,7 +20848,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     gauge.messages.Api.PerformRefactoringRequest getPerformRefactoringRequest();
     /**
@@ -20068,7 +20856,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     gauge.messages.Api.PerformRefactoringRequestOrBuilder getPerformRefactoringRequestOrBuilder();
 
@@ -20077,7 +20865,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     boolean hasPerformRefactoringResponse();
     /**
@@ -20085,7 +20873,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     gauge.messages.Api.PerformRefactoringResponse getPerformRefactoringResponse();
     /**
@@ -20093,7 +20881,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     gauge.messages.Api.PerformRefactoringResponseOrBuilder getPerformRefactoringResponseOrBuilder();
 
@@ -20102,7 +20890,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     boolean hasExtractConceptRequest();
     /**
@@ -20110,7 +20898,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     gauge.messages.Api.ExtractConceptRequest getExtractConceptRequest();
     /**
@@ -20118,7 +20906,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     gauge.messages.Api.ExtractConceptRequestOrBuilder getExtractConceptRequestOrBuilder();
 
@@ -20127,7 +20915,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     boolean hasExtractConceptResponse();
     /**
@@ -20135,7 +20923,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     gauge.messages.Api.ExtractConceptResponse getExtractConceptResponse();
     /**
@@ -20143,7 +20931,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     gauge.messages.Api.ExtractConceptResponseOrBuilder getExtractConceptResponseOrBuilder();
 
@@ -20152,7 +20940,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     boolean hasFormatSpecsRequest();
     /**
@@ -20160,7 +20948,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     gauge.messages.Api.FormatSpecsRequest getFormatSpecsRequest();
     /**
@@ -20168,7 +20956,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     gauge.messages.Api.FormatSpecsRequestOrBuilder getFormatSpecsRequestOrBuilder();
 
@@ -20177,7 +20965,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     boolean hasFormatSpecsResponse();
     /**
@@ -20185,7 +20973,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     gauge.messages.Api.FormatSpecsResponse getFormatSpecsResponse();
     /**
@@ -20193,7 +20981,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     gauge.messages.Api.FormatSpecsResponseOrBuilder getFormatSpecsResponseOrBuilder();
 
@@ -20202,7 +20990,7 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     boolean hasUnsupportedApiMessageResponse();
     /**
@@ -20210,7 +20998,7 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     gauge.messages.Api.UnsupportedApiMessageResponse getUnsupportedApiMessageResponse();
     /**
@@ -20218,9 +21006,59 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     gauge.messages.Api.UnsupportedApiMessageResponseOrBuilder getUnsupportedApiMessageResponseOrBuilder();
+
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    boolean hasPerformRefreshRequest();
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    gauge.messages.Api.PerformRefreshRequest getPerformRefreshRequest();
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    gauge.messages.Api.PerformRefreshRequestOrBuilder getPerformRefreshRequestOrBuilder();
+
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    boolean hasPerformRefreshResponse();
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    gauge.messages.Api.PerformRefreshResponse getPerformRefreshResponse();
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    gauge.messages.Api.PerformRefreshResponseOrBuilder getPerformRefreshResponseOrBuilder();
   }
   /**
    * <pre>
@@ -20565,6 +21403,32 @@ public final class Api {
 
               break;
             }
+            case 202: {
+              gauge.messages.Api.PerformRefreshRequest.Builder subBuilder = null;
+              if (performRefreshRequest_ != null) {
+                subBuilder = performRefreshRequest_.toBuilder();
+              }
+              performRefreshRequest_ = input.readMessage(gauge.messages.Api.PerformRefreshRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(performRefreshRequest_);
+                performRefreshRequest_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 210: {
+              gauge.messages.Api.PerformRefreshResponse.Builder subBuilder = null;
+              if (performRefreshResponse_ != null) {
+                subBuilder = performRefreshResponse_.toBuilder();
+              }
+              performRefreshResponse_ = input.readMessage(gauge.messages.Api.PerformRefreshResponse.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(performRefreshResponse_);
+                performRefreshResponse_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -20681,6 +21545,14 @@ public final class Api {
        * <code>UnsupportedApiMessageResponse = 21;</code>
        */
       UnsupportedApiMessageResponse(21),
+      /**
+       * <code>PerformRefreshRequest = 22;</code>
+       */
+      PerformRefreshRequest(22),
+      /**
+       * <code>PerformRefreshResponse = 23;</code>
+       */
+      PerformRefreshResponse(23),
       UNRECOGNIZED(-1),
       ;
 
@@ -20772,6 +21644,14 @@ public final class Api {
        * <code>UnsupportedApiMessageResponse = 21;</code>
        */
       public static final int UnsupportedApiMessageResponse_VALUE = 21;
+      /**
+       * <code>PerformRefreshRequest = 22;</code>
+       */
+      public static final int PerformRefreshRequest_VALUE = 22;
+      /**
+       * <code>PerformRefreshResponse = 23;</code>
+       */
+      public static final int PerformRefreshResponse_VALUE = 23;
 
 
       public final int getNumber() {
@@ -20814,6 +21694,8 @@ public final class Api {
           case 19: return FormatSpecsRequest;
           case 20: return FormatSpecsResponse;
           case 21: return UnsupportedApiMessageResponse;
+          case 22: return PerformRefreshRequest;
+          case 23: return PerformRefreshResponse;
           default: return null;
         }
       }
@@ -20873,7 +21755,7 @@ public final class Api {
      *&#47; Type of API call being made
      * </pre>
      *
-     * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+     * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
      */
     public int getMessageTypeValue() {
       return messageType_;
@@ -20883,7 +21765,7 @@ public final class Api {
      *&#47; Type of API call being made
      * </pre>
      *
-     * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+     * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
      */
     public gauge.messages.Api.APIMessage.APIMessageType getMessageType() {
       gauge.messages.Api.APIMessage.APIMessageType result = gauge.messages.Api.APIMessage.APIMessageType.valueOf(messageType_);
@@ -20898,7 +21780,7 @@ public final class Api {
      * / This is used to synchronize messages &amp; responses
      * </pre>
      *
-     * <code>optional int64 messageId = 2;</code>
+     * <code>int64 messageId = 2;</code>
      */
     public long getMessageId() {
       return messageId_;
@@ -20911,7 +21793,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     public boolean hasProjectRootRequest() {
       return projectRootRequest_ != null;
@@ -20921,7 +21803,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     public gauge.messages.Api.GetProjectRootRequest getProjectRootRequest() {
       return projectRootRequest_ == null ? gauge.messages.Api.GetProjectRootRequest.getDefaultInstance() : projectRootRequest_;
@@ -20931,7 +21813,7 @@ public final class Api {
      *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+     * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
      */
     public gauge.messages.Api.GetProjectRootRequestOrBuilder getProjectRootRequestOrBuilder() {
       return getProjectRootRequest();
@@ -20944,7 +21826,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     public boolean hasProjectRootResponse() {
       return projectRootResponse_ != null;
@@ -20954,7 +21836,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     public gauge.messages.Api.GetProjectRootResponse getProjectRootResponse() {
       return projectRootResponse_ == null ? gauge.messages.Api.GetProjectRootResponse.getDefaultInstance() : projectRootResponse_;
@@ -20964,7 +21846,7 @@ public final class Api {
      *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+     * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
      */
     public gauge.messages.Api.GetProjectRootResponseOrBuilder getProjectRootResponseOrBuilder() {
       return getProjectRootResponse();
@@ -20977,7 +21859,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     public boolean hasInstallationRootRequest() {
       return installationRootRequest_ != null;
@@ -20987,7 +21869,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     public gauge.messages.Api.GetInstallationRootRequest getInstallationRootRequest() {
       return installationRootRequest_ == null ? gauge.messages.Api.GetInstallationRootRequest.getDefaultInstance() : installationRootRequest_;
@@ -20997,7 +21879,7 @@ public final class Api {
      *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+     * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
      */
     public gauge.messages.Api.GetInstallationRootRequestOrBuilder getInstallationRootRequestOrBuilder() {
       return getInstallationRootRequest();
@@ -21010,7 +21892,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     public boolean hasInstallationRootResponse() {
       return installationRootResponse_ != null;
@@ -21020,7 +21902,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     public gauge.messages.Api.GetInstallationRootResponse getInstallationRootResponse() {
       return installationRootResponse_ == null ? gauge.messages.Api.GetInstallationRootResponse.getDefaultInstance() : installationRootResponse_;
@@ -21030,7 +21912,7 @@ public final class Api {
      *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+     * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
      */
     public gauge.messages.Api.GetInstallationRootResponseOrBuilder getInstallationRootResponseOrBuilder() {
       return getInstallationRootResponse();
@@ -21043,7 +21925,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     public boolean hasAllStepsRequest() {
       return allStepsRequest_ != null;
@@ -21053,7 +21935,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     public gauge.messages.Api.GetAllStepsRequest getAllStepsRequest() {
       return allStepsRequest_ == null ? gauge.messages.Api.GetAllStepsRequest.getDefaultInstance() : allStepsRequest_;
@@ -21063,7 +21945,7 @@ public final class Api {
      *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+     * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
      */
     public gauge.messages.Api.GetAllStepsRequestOrBuilder getAllStepsRequestOrBuilder() {
       return getAllStepsRequest();
@@ -21076,7 +21958,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     public boolean hasAllStepsResponse() {
       return allStepsResponse_ != null;
@@ -21086,7 +21968,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     public gauge.messages.Api.GetAllStepsResponse getAllStepsResponse() {
       return allStepsResponse_ == null ? gauge.messages.Api.GetAllStepsResponse.getDefaultInstance() : allStepsResponse_;
@@ -21096,7 +21978,7 @@ public final class Api {
      *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+     * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
      */
     public gauge.messages.Api.GetAllStepsResponseOrBuilder getAllStepsResponseOrBuilder() {
       return getAllStepsResponse();
@@ -21109,7 +21991,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     public boolean hasSpecsRequest() {
       return specsRequest_ != null;
@@ -21119,7 +22001,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     public gauge.messages.Api.SpecsRequest getSpecsRequest() {
       return specsRequest_ == null ? gauge.messages.Api.SpecsRequest.getDefaultInstance() : specsRequest_;
@@ -21129,7 +22011,7 @@ public final class Api {
      *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+     * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
      */
     public gauge.messages.Api.SpecsRequestOrBuilder getSpecsRequestOrBuilder() {
       return getSpecsRequest();
@@ -21142,7 +22024,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     public boolean hasSpecsResponse() {
       return specsResponse_ != null;
@@ -21152,7 +22034,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     public gauge.messages.Api.SpecsResponse getSpecsResponse() {
       return specsResponse_ == null ? gauge.messages.Api.SpecsResponse.getDefaultInstance() : specsResponse_;
@@ -21162,7 +22044,7 @@ public final class Api {
      *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+     * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
      */
     public gauge.messages.Api.SpecsResponseOrBuilder getSpecsResponseOrBuilder() {
       return getSpecsResponse();
@@ -21175,7 +22057,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     public boolean hasStepValueRequest() {
       return stepValueRequest_ != null;
@@ -21185,7 +22067,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     public gauge.messages.Api.GetStepValueRequest getStepValueRequest() {
       return stepValueRequest_ == null ? gauge.messages.Api.GetStepValueRequest.getDefaultInstance() : stepValueRequest_;
@@ -21195,7 +22077,7 @@ public final class Api {
      *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+     * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
      */
     public gauge.messages.Api.GetStepValueRequestOrBuilder getStepValueRequestOrBuilder() {
       return getStepValueRequest();
@@ -21208,7 +22090,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     public boolean hasStepValueResponse() {
       return stepValueResponse_ != null;
@@ -21218,7 +22100,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     public gauge.messages.Api.GetStepValueResponse getStepValueResponse() {
       return stepValueResponse_ == null ? gauge.messages.Api.GetStepValueResponse.getDefaultInstance() : stepValueResponse_;
@@ -21228,7 +22110,7 @@ public final class Api {
      *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+     * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
      */
     public gauge.messages.Api.GetStepValueResponseOrBuilder getStepValueResponseOrBuilder() {
       return getStepValueResponse();
@@ -21241,7 +22123,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     public boolean hasLibPathRequest() {
       return libPathRequest_ != null;
@@ -21251,7 +22133,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     public gauge.messages.Api.GetLanguagePluginLibPathRequest getLibPathRequest() {
       return libPathRequest_ == null ? gauge.messages.Api.GetLanguagePluginLibPathRequest.getDefaultInstance() : libPathRequest_;
@@ -21261,7 +22143,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
      */
     public gauge.messages.Api.GetLanguagePluginLibPathRequestOrBuilder getLibPathRequestOrBuilder() {
       return getLibPathRequest();
@@ -21274,7 +22156,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     public boolean hasLibPathResponse() {
       return libPathResponse_ != null;
@@ -21284,7 +22166,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     public gauge.messages.Api.GetLanguagePluginLibPathResponse getLibPathResponse() {
       return libPathResponse_ == null ? gauge.messages.Api.GetLanguagePluginLibPathResponse.getDefaultInstance() : libPathResponse_;
@@ -21294,7 +22176,7 @@ public final class Api {
      *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+     * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
      */
     public gauge.messages.Api.GetLanguagePluginLibPathResponseOrBuilder getLibPathResponseOrBuilder() {
       return getLibPathResponse();
@@ -21307,7 +22189,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     public boolean hasError() {
       return error_ != null;
@@ -21317,7 +22199,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     public gauge.messages.Api.ErrorResponse getError() {
       return error_ == null ? gauge.messages.Api.ErrorResponse.getDefaultInstance() : error_;
@@ -21327,7 +22209,7 @@ public final class Api {
      *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+     * <code>.gauge.messages.ErrorResponse error = 15;</code>
      */
     public gauge.messages.Api.ErrorResponseOrBuilder getErrorOrBuilder() {
       return getError();
@@ -21340,7 +22222,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     public boolean hasAllConceptsRequest() {
       return allConceptsRequest_ != null;
@@ -21350,7 +22232,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     public gauge.messages.Api.GetAllConceptsRequest getAllConceptsRequest() {
       return allConceptsRequest_ == null ? gauge.messages.Api.GetAllConceptsRequest.getDefaultInstance() : allConceptsRequest_;
@@ -21360,7 +22242,7 @@ public final class Api {
      *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+     * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
      */
     public gauge.messages.Api.GetAllConceptsRequestOrBuilder getAllConceptsRequestOrBuilder() {
       return getAllConceptsRequest();
@@ -21373,7 +22255,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     public boolean hasAllConceptsResponse() {
       return allConceptsResponse_ != null;
@@ -21383,7 +22265,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     public gauge.messages.Api.GetAllConceptsResponse getAllConceptsResponse() {
       return allConceptsResponse_ == null ? gauge.messages.Api.GetAllConceptsResponse.getDefaultInstance() : allConceptsResponse_;
@@ -21393,7 +22275,7 @@ public final class Api {
      *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+     * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
      */
     public gauge.messages.Api.GetAllConceptsResponseOrBuilder getAllConceptsResponseOrBuilder() {
       return getAllConceptsResponse();
@@ -21406,7 +22288,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     public boolean hasPerformRefactoringRequest() {
       return performRefactoringRequest_ != null;
@@ -21416,7 +22298,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     public gauge.messages.Api.PerformRefactoringRequest getPerformRefactoringRequest() {
       return performRefactoringRequest_ == null ? gauge.messages.Api.PerformRefactoringRequest.getDefaultInstance() : performRefactoringRequest_;
@@ -21426,7 +22308,7 @@ public final class Api {
      *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+     * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
      */
     public gauge.messages.Api.PerformRefactoringRequestOrBuilder getPerformRefactoringRequestOrBuilder() {
       return getPerformRefactoringRequest();
@@ -21439,7 +22321,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     public boolean hasPerformRefactoringResponse() {
       return performRefactoringResponse_ != null;
@@ -21449,7 +22331,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     public gauge.messages.Api.PerformRefactoringResponse getPerformRefactoringResponse() {
       return performRefactoringResponse_ == null ? gauge.messages.Api.PerformRefactoringResponse.getDefaultInstance() : performRefactoringResponse_;
@@ -21459,7 +22341,7 @@ public final class Api {
      *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+     * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
      */
     public gauge.messages.Api.PerformRefactoringResponseOrBuilder getPerformRefactoringResponseOrBuilder() {
       return getPerformRefactoringResponse();
@@ -21472,7 +22354,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     public boolean hasExtractConceptRequest() {
       return extractConceptRequest_ != null;
@@ -21482,7 +22364,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     public gauge.messages.Api.ExtractConceptRequest getExtractConceptRequest() {
       return extractConceptRequest_ == null ? gauge.messages.Api.ExtractConceptRequest.getDefaultInstance() : extractConceptRequest_;
@@ -21492,7 +22374,7 @@ public final class Api {
      *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+     * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
      */
     public gauge.messages.Api.ExtractConceptRequestOrBuilder getExtractConceptRequestOrBuilder() {
       return getExtractConceptRequest();
@@ -21505,7 +22387,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     public boolean hasExtractConceptResponse() {
       return extractConceptResponse_ != null;
@@ -21515,7 +22397,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     public gauge.messages.Api.ExtractConceptResponse getExtractConceptResponse() {
       return extractConceptResponse_ == null ? gauge.messages.Api.ExtractConceptResponse.getDefaultInstance() : extractConceptResponse_;
@@ -21525,7 +22407,7 @@ public final class Api {
      *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+     * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
      */
     public gauge.messages.Api.ExtractConceptResponseOrBuilder getExtractConceptResponseOrBuilder() {
       return getExtractConceptResponse();
@@ -21538,7 +22420,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     public boolean hasFormatSpecsRequest() {
       return formatSpecsRequest_ != null;
@@ -21548,7 +22430,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     public gauge.messages.Api.FormatSpecsRequest getFormatSpecsRequest() {
       return formatSpecsRequest_ == null ? gauge.messages.Api.FormatSpecsRequest.getDefaultInstance() : formatSpecsRequest_;
@@ -21558,7 +22440,7 @@ public final class Api {
      *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+     * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
      */
     public gauge.messages.Api.FormatSpecsRequestOrBuilder getFormatSpecsRequestOrBuilder() {
       return getFormatSpecsRequest();
@@ -21571,7 +22453,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     public boolean hasFormatSpecsResponse() {
       return formatSpecsResponse_ != null;
@@ -21581,7 +22463,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     public gauge.messages.Api.FormatSpecsResponse getFormatSpecsResponse() {
       return formatSpecsResponse_ == null ? gauge.messages.Api.FormatSpecsResponse.getDefaultInstance() : formatSpecsResponse_;
@@ -21591,7 +22473,7 @@ public final class Api {
      *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+     * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
      */
     public gauge.messages.Api.FormatSpecsResponseOrBuilder getFormatSpecsResponseOrBuilder() {
       return getFormatSpecsResponse();
@@ -21604,7 +22486,7 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     public boolean hasUnsupportedApiMessageResponse() {
       return unsupportedApiMessageResponse_ != null;
@@ -21614,7 +22496,7 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     public gauge.messages.Api.UnsupportedApiMessageResponse getUnsupportedApiMessageResponse() {
       return unsupportedApiMessageResponse_ == null ? gauge.messages.Api.UnsupportedApiMessageResponse.getDefaultInstance() : unsupportedApiMessageResponse_;
@@ -21624,10 +22506,76 @@ public final class Api {
      *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
      * </pre>
      *
-     * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+     * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
      */
     public gauge.messages.Api.UnsupportedApiMessageResponseOrBuilder getUnsupportedApiMessageResponseOrBuilder() {
       return getUnsupportedApiMessageResponse();
+    }
+
+    public static final int PERFORMREFRESHREQUEST_FIELD_NUMBER = 25;
+    private gauge.messages.Api.PerformRefreshRequest performRefreshRequest_;
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    public boolean hasPerformRefreshRequest() {
+      return performRefreshRequest_ != null;
+    }
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    public gauge.messages.Api.PerformRefreshRequest getPerformRefreshRequest() {
+      return performRefreshRequest_ == null ? gauge.messages.Api.PerformRefreshRequest.getDefaultInstance() : performRefreshRequest_;
+    }
+    /**
+     * <pre>
+     *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+     */
+    public gauge.messages.Api.PerformRefreshRequestOrBuilder getPerformRefreshRequestOrBuilder() {
+      return getPerformRefreshRequest();
+    }
+
+    public static final int PERFORMREFRESHRESPONSE_FIELD_NUMBER = 26;
+    private gauge.messages.Api.PerformRefreshResponse performRefreshResponse_;
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    public boolean hasPerformRefreshResponse() {
+      return performRefreshResponse_ != null;
+    }
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    public gauge.messages.Api.PerformRefreshResponse getPerformRefreshResponse() {
+      return performRefreshResponse_ == null ? gauge.messages.Api.PerformRefreshResponse.getDefaultInstance() : performRefreshResponse_;
+    }
+    /**
+     * <pre>
+     *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+     * </pre>
+     *
+     * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+     */
+    public gauge.messages.Api.PerformRefreshResponseOrBuilder getPerformRefreshResponseOrBuilder() {
+      return getPerformRefreshResponse();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -21713,6 +22661,12 @@ public final class Api {
       }
       if (unsupportedApiMessageResponse_ != null) {
         output.writeMessage(24, getUnsupportedApiMessageResponse());
+      }
+      if (performRefreshRequest_ != null) {
+        output.writeMessage(25, getPerformRefreshRequest());
+      }
+      if (performRefreshResponse_ != null) {
+        output.writeMessage(26, getPerformRefreshResponse());
       }
     }
 
@@ -21816,6 +22770,14 @@ public final class Api {
       if (unsupportedApiMessageResponse_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(24, getUnsupportedApiMessageResponse());
+      }
+      if (performRefreshRequest_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(25, getPerformRefreshRequest());
+      }
+      if (performRefreshResponse_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(26, getPerformRefreshResponse());
       }
       memoizedSize = size;
       return size;
@@ -21946,6 +22908,16 @@ public final class Api {
         result = result && getUnsupportedApiMessageResponse()
             .equals(other.getUnsupportedApiMessageResponse());
       }
+      result = result && (hasPerformRefreshRequest() == other.hasPerformRefreshRequest());
+      if (hasPerformRefreshRequest()) {
+        result = result && getPerformRefreshRequest()
+            .equals(other.getPerformRefreshRequest());
+      }
+      result = result && (hasPerformRefreshResponse() == other.hasPerformRefreshResponse());
+      if (hasPerformRefreshResponse()) {
+        result = result && getPerformRefreshResponse()
+            .equals(other.getPerformRefreshResponse());
+      }
       return result;
     }
 
@@ -21955,7 +22927,7 @@ public final class Api {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + MESSAGETYPE_FIELD_NUMBER;
       hash = (53 * hash) + messageType_;
       hash = (37 * hash) + MESSAGEID_FIELD_NUMBER;
@@ -22049,11 +23021,30 @@ public final class Api {
         hash = (37 * hash) + UNSUPPORTEDAPIMESSAGERESPONSE_FIELD_NUMBER;
         hash = (53 * hash) + getUnsupportedApiMessageResponse().hashCode();
       }
+      if (hasPerformRefreshRequest()) {
+        hash = (37 * hash) + PERFORMREFRESHREQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getPerformRefreshRequest().hashCode();
+      }
+      if (hasPerformRefreshResponse()) {
+        hash = (37 * hash) + PERFORMREFRESHRESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getPerformRefreshResponse().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
+    public static gauge.messages.Api.APIMessage parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static gauge.messages.Api.APIMessage parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static gauge.messages.Api.APIMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -22308,6 +23299,18 @@ public final class Api {
           unsupportedApiMessageResponse_ = null;
           unsupportedApiMessageResponseBuilder_ = null;
         }
+        if (performRefreshRequestBuilder_ == null) {
+          performRefreshRequest_ = null;
+        } else {
+          performRefreshRequest_ = null;
+          performRefreshRequestBuilder_ = null;
+        }
+        if (performRefreshResponseBuilder_ == null) {
+          performRefreshResponse_ = null;
+        } else {
+          performRefreshResponse_ = null;
+          performRefreshResponseBuilder_ = null;
+        }
         return this;
       }
 
@@ -22442,6 +23445,16 @@ public final class Api {
         } else {
           result.unsupportedApiMessageResponse_ = unsupportedApiMessageResponseBuilder_.build();
         }
+        if (performRefreshRequestBuilder_ == null) {
+          result.performRefreshRequest_ = performRefreshRequest_;
+        } else {
+          result.performRefreshRequest_ = performRefreshRequestBuilder_.build();
+        }
+        if (performRefreshResponseBuilder_ == null) {
+          result.performRefreshResponse_ = performRefreshResponse_;
+        } else {
+          result.performRefreshResponse_ = performRefreshResponseBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -22555,6 +23568,12 @@ public final class Api {
         if (other.hasUnsupportedApiMessageResponse()) {
           mergeUnsupportedApiMessageResponse(other.getUnsupportedApiMessageResponse());
         }
+        if (other.hasPerformRefreshRequest()) {
+          mergePerformRefreshRequest(other.getPerformRefreshRequest());
+        }
+        if (other.hasPerformRefreshResponse()) {
+          mergePerformRefreshResponse(other.getPerformRefreshResponse());
+        }
         onChanged();
         return this;
       }
@@ -22587,7 +23606,7 @@ public final class Api {
        *&#47; Type of API call being made
        * </pre>
        *
-       * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+       * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
        */
       public int getMessageTypeValue() {
         return messageType_;
@@ -22597,7 +23616,7 @@ public final class Api {
        *&#47; Type of API call being made
        * </pre>
        *
-       * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+       * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
        */
       public Builder setMessageTypeValue(int value) {
         messageType_ = value;
@@ -22609,7 +23628,7 @@ public final class Api {
        *&#47; Type of API call being made
        * </pre>
        *
-       * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+       * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
        */
       public gauge.messages.Api.APIMessage.APIMessageType getMessageType() {
         gauge.messages.Api.APIMessage.APIMessageType result = gauge.messages.Api.APIMessage.APIMessageType.valueOf(messageType_);
@@ -22620,7 +23639,7 @@ public final class Api {
        *&#47; Type of API call being made
        * </pre>
        *
-       * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+       * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
        */
       public Builder setMessageType(gauge.messages.Api.APIMessage.APIMessageType value) {
         if (value == null) {
@@ -22636,7 +23655,7 @@ public final class Api {
        *&#47; Type of API call being made
        * </pre>
        *
-       * <code>optional .gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
+       * <code>.gauge.messages.APIMessage.APIMessageType messageType = 1;</code>
        */
       public Builder clearMessageType() {
         
@@ -22652,7 +23671,7 @@ public final class Api {
        * / This is used to synchronize messages &amp; responses
        * </pre>
        *
-       * <code>optional int64 messageId = 2;</code>
+       * <code>int64 messageId = 2;</code>
        */
       public long getMessageId() {
         return messageId_;
@@ -22663,7 +23682,7 @@ public final class Api {
        * / This is used to synchronize messages &amp; responses
        * </pre>
        *
-       * <code>optional int64 messageId = 2;</code>
+       * <code>int64 messageId = 2;</code>
        */
       public Builder setMessageId(long value) {
         
@@ -22677,7 +23696,7 @@ public final class Api {
        * / This is used to synchronize messages &amp; responses
        * </pre>
        *
-       * <code>optional int64 messageId = 2;</code>
+       * <code>int64 messageId = 2;</code>
        */
       public Builder clearMessageId() {
         
@@ -22694,7 +23713,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public boolean hasProjectRootRequest() {
         return projectRootRequestBuilder_ != null || projectRootRequest_ != null;
@@ -22704,7 +23723,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public gauge.messages.Api.GetProjectRootRequest getProjectRootRequest() {
         if (projectRootRequestBuilder_ == null) {
@@ -22718,7 +23737,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public Builder setProjectRootRequest(gauge.messages.Api.GetProjectRootRequest value) {
         if (projectRootRequestBuilder_ == null) {
@@ -22738,7 +23757,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public Builder setProjectRootRequest(
           gauge.messages.Api.GetProjectRootRequest.Builder builderForValue) {
@@ -22756,7 +23775,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public Builder mergeProjectRootRequest(gauge.messages.Api.GetProjectRootRequest value) {
         if (projectRootRequestBuilder_ == null) {
@@ -22778,7 +23797,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public Builder clearProjectRootRequest() {
         if (projectRootRequestBuilder_ == null) {
@@ -22796,7 +23815,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public gauge.messages.Api.GetProjectRootRequest.Builder getProjectRootRequestBuilder() {
         
@@ -22808,7 +23827,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       public gauge.messages.Api.GetProjectRootRequestOrBuilder getProjectRootRequestOrBuilder() {
         if (projectRootRequestBuilder_ != null) {
@@ -22823,7 +23842,7 @@ public final class Api {
        *&#47; [GetProjectRootRequest](#gauge.messages.GetProjectRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
+       * <code>.gauge.messages.GetProjectRootRequest projectRootRequest = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetProjectRootRequest, gauge.messages.Api.GetProjectRootRequest.Builder, gauge.messages.Api.GetProjectRootRequestOrBuilder> 
@@ -22847,7 +23866,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public boolean hasProjectRootResponse() {
         return projectRootResponseBuilder_ != null || projectRootResponse_ != null;
@@ -22857,7 +23876,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public gauge.messages.Api.GetProjectRootResponse getProjectRootResponse() {
         if (projectRootResponseBuilder_ == null) {
@@ -22871,7 +23890,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public Builder setProjectRootResponse(gauge.messages.Api.GetProjectRootResponse value) {
         if (projectRootResponseBuilder_ == null) {
@@ -22891,7 +23910,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public Builder setProjectRootResponse(
           gauge.messages.Api.GetProjectRootResponse.Builder builderForValue) {
@@ -22909,7 +23928,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public Builder mergeProjectRootResponse(gauge.messages.Api.GetProjectRootResponse value) {
         if (projectRootResponseBuilder_ == null) {
@@ -22931,7 +23950,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public Builder clearProjectRootResponse() {
         if (projectRootResponseBuilder_ == null) {
@@ -22949,7 +23968,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public gauge.messages.Api.GetProjectRootResponse.Builder getProjectRootResponseBuilder() {
         
@@ -22961,7 +23980,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       public gauge.messages.Api.GetProjectRootResponseOrBuilder getProjectRootResponseOrBuilder() {
         if (projectRootResponseBuilder_ != null) {
@@ -22976,7 +23995,7 @@ public final class Api {
        *&#47; [GetProjectRootResponse](#gauge.messages.GetProjectRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
+       * <code>.gauge.messages.GetProjectRootResponse projectRootResponse = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetProjectRootResponse, gauge.messages.Api.GetProjectRootResponse.Builder, gauge.messages.Api.GetProjectRootResponseOrBuilder> 
@@ -23000,7 +24019,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public boolean hasInstallationRootRequest() {
         return installationRootRequestBuilder_ != null || installationRootRequest_ != null;
@@ -23010,7 +24029,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public gauge.messages.Api.GetInstallationRootRequest getInstallationRootRequest() {
         if (installationRootRequestBuilder_ == null) {
@@ -23024,7 +24043,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public Builder setInstallationRootRequest(gauge.messages.Api.GetInstallationRootRequest value) {
         if (installationRootRequestBuilder_ == null) {
@@ -23044,7 +24063,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public Builder setInstallationRootRequest(
           gauge.messages.Api.GetInstallationRootRequest.Builder builderForValue) {
@@ -23062,7 +24081,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public Builder mergeInstallationRootRequest(gauge.messages.Api.GetInstallationRootRequest value) {
         if (installationRootRequestBuilder_ == null) {
@@ -23084,7 +24103,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public Builder clearInstallationRootRequest() {
         if (installationRootRequestBuilder_ == null) {
@@ -23102,7 +24121,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public gauge.messages.Api.GetInstallationRootRequest.Builder getInstallationRootRequestBuilder() {
         
@@ -23114,7 +24133,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       public gauge.messages.Api.GetInstallationRootRequestOrBuilder getInstallationRootRequestOrBuilder() {
         if (installationRootRequestBuilder_ != null) {
@@ -23129,7 +24148,7 @@ public final class Api {
        *&#47; [GetInstallationRootRequest](#gauge.messages.GetInstallationRootRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
+       * <code>.gauge.messages.GetInstallationRootRequest installationRootRequest = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetInstallationRootRequest, gauge.messages.Api.GetInstallationRootRequest.Builder, gauge.messages.Api.GetInstallationRootRequestOrBuilder> 
@@ -23153,7 +24172,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public boolean hasInstallationRootResponse() {
         return installationRootResponseBuilder_ != null || installationRootResponse_ != null;
@@ -23163,7 +24182,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public gauge.messages.Api.GetInstallationRootResponse getInstallationRootResponse() {
         if (installationRootResponseBuilder_ == null) {
@@ -23177,7 +24196,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public Builder setInstallationRootResponse(gauge.messages.Api.GetInstallationRootResponse value) {
         if (installationRootResponseBuilder_ == null) {
@@ -23197,7 +24216,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public Builder setInstallationRootResponse(
           gauge.messages.Api.GetInstallationRootResponse.Builder builderForValue) {
@@ -23215,7 +24234,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public Builder mergeInstallationRootResponse(gauge.messages.Api.GetInstallationRootResponse value) {
         if (installationRootResponseBuilder_ == null) {
@@ -23237,7 +24256,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public Builder clearInstallationRootResponse() {
         if (installationRootResponseBuilder_ == null) {
@@ -23255,7 +24274,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public gauge.messages.Api.GetInstallationRootResponse.Builder getInstallationRootResponseBuilder() {
         
@@ -23267,7 +24286,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       public gauge.messages.Api.GetInstallationRootResponseOrBuilder getInstallationRootResponseOrBuilder() {
         if (installationRootResponseBuilder_ != null) {
@@ -23282,7 +24301,7 @@ public final class Api {
        *&#47; [GetInstallationRootResponse](#gauge.messages.GetInstallationRootResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
+       * <code>.gauge.messages.GetInstallationRootResponse installationRootResponse = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetInstallationRootResponse, gauge.messages.Api.GetInstallationRootResponse.Builder, gauge.messages.Api.GetInstallationRootResponseOrBuilder> 
@@ -23306,7 +24325,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public boolean hasAllStepsRequest() {
         return allStepsRequestBuilder_ != null || allStepsRequest_ != null;
@@ -23316,7 +24335,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public gauge.messages.Api.GetAllStepsRequest getAllStepsRequest() {
         if (allStepsRequestBuilder_ == null) {
@@ -23330,7 +24349,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public Builder setAllStepsRequest(gauge.messages.Api.GetAllStepsRequest value) {
         if (allStepsRequestBuilder_ == null) {
@@ -23350,7 +24369,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public Builder setAllStepsRequest(
           gauge.messages.Api.GetAllStepsRequest.Builder builderForValue) {
@@ -23368,7 +24387,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public Builder mergeAllStepsRequest(gauge.messages.Api.GetAllStepsRequest value) {
         if (allStepsRequestBuilder_ == null) {
@@ -23390,7 +24409,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public Builder clearAllStepsRequest() {
         if (allStepsRequestBuilder_ == null) {
@@ -23408,7 +24427,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public gauge.messages.Api.GetAllStepsRequest.Builder getAllStepsRequestBuilder() {
         
@@ -23420,7 +24439,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       public gauge.messages.Api.GetAllStepsRequestOrBuilder getAllStepsRequestOrBuilder() {
         if (allStepsRequestBuilder_ != null) {
@@ -23435,7 +24454,7 @@ public final class Api {
        *&#47; [GetAllStepsRequest](#gauge.messages.GetAllStepsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
+       * <code>.gauge.messages.GetAllStepsRequest allStepsRequest = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetAllStepsRequest, gauge.messages.Api.GetAllStepsRequest.Builder, gauge.messages.Api.GetAllStepsRequestOrBuilder> 
@@ -23459,7 +24478,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public boolean hasAllStepsResponse() {
         return allStepsResponseBuilder_ != null || allStepsResponse_ != null;
@@ -23469,7 +24488,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public gauge.messages.Api.GetAllStepsResponse getAllStepsResponse() {
         if (allStepsResponseBuilder_ == null) {
@@ -23483,7 +24502,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public Builder setAllStepsResponse(gauge.messages.Api.GetAllStepsResponse value) {
         if (allStepsResponseBuilder_ == null) {
@@ -23503,7 +24522,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public Builder setAllStepsResponse(
           gauge.messages.Api.GetAllStepsResponse.Builder builderForValue) {
@@ -23521,7 +24540,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public Builder mergeAllStepsResponse(gauge.messages.Api.GetAllStepsResponse value) {
         if (allStepsResponseBuilder_ == null) {
@@ -23543,7 +24562,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public Builder clearAllStepsResponse() {
         if (allStepsResponseBuilder_ == null) {
@@ -23561,7 +24580,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public gauge.messages.Api.GetAllStepsResponse.Builder getAllStepsResponseBuilder() {
         
@@ -23573,7 +24592,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       public gauge.messages.Api.GetAllStepsResponseOrBuilder getAllStepsResponseOrBuilder() {
         if (allStepsResponseBuilder_ != null) {
@@ -23588,7 +24607,7 @@ public final class Api {
        *&#47; [GetAllStepsResponse](#gauge.messages.GetAllStepsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
+       * <code>.gauge.messages.GetAllStepsResponse allStepsResponse = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetAllStepsResponse, gauge.messages.Api.GetAllStepsResponse.Builder, gauge.messages.Api.GetAllStepsResponseOrBuilder> 
@@ -23612,7 +24631,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public boolean hasSpecsRequest() {
         return specsRequestBuilder_ != null || specsRequest_ != null;
@@ -23622,7 +24641,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public gauge.messages.Api.SpecsRequest getSpecsRequest() {
         if (specsRequestBuilder_ == null) {
@@ -23636,7 +24655,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public Builder setSpecsRequest(gauge.messages.Api.SpecsRequest value) {
         if (specsRequestBuilder_ == null) {
@@ -23656,7 +24675,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public Builder setSpecsRequest(
           gauge.messages.Api.SpecsRequest.Builder builderForValue) {
@@ -23674,7 +24693,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public Builder mergeSpecsRequest(gauge.messages.Api.SpecsRequest value) {
         if (specsRequestBuilder_ == null) {
@@ -23696,7 +24715,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public Builder clearSpecsRequest() {
         if (specsRequestBuilder_ == null) {
@@ -23714,7 +24733,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public gauge.messages.Api.SpecsRequest.Builder getSpecsRequestBuilder() {
         
@@ -23726,7 +24745,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       public gauge.messages.Api.SpecsRequestOrBuilder getSpecsRequestOrBuilder() {
         if (specsRequestBuilder_ != null) {
@@ -23741,7 +24760,7 @@ public final class Api {
        *&#47; [GetAllSpecsRequest](#gauge.messages.GetAllSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsRequest specsRequest = 9;</code>
+       * <code>.gauge.messages.SpecsRequest specsRequest = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.SpecsRequest, gauge.messages.Api.SpecsRequest.Builder, gauge.messages.Api.SpecsRequestOrBuilder> 
@@ -23765,7 +24784,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public boolean hasSpecsResponse() {
         return specsResponseBuilder_ != null || specsResponse_ != null;
@@ -23775,7 +24794,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public gauge.messages.Api.SpecsResponse getSpecsResponse() {
         if (specsResponseBuilder_ == null) {
@@ -23789,7 +24808,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public Builder setSpecsResponse(gauge.messages.Api.SpecsResponse value) {
         if (specsResponseBuilder_ == null) {
@@ -23809,7 +24828,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public Builder setSpecsResponse(
           gauge.messages.Api.SpecsResponse.Builder builderForValue) {
@@ -23827,7 +24846,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public Builder mergeSpecsResponse(gauge.messages.Api.SpecsResponse value) {
         if (specsResponseBuilder_ == null) {
@@ -23849,7 +24868,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public Builder clearSpecsResponse() {
         if (specsResponseBuilder_ == null) {
@@ -23867,7 +24886,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public gauge.messages.Api.SpecsResponse.Builder getSpecsResponseBuilder() {
         
@@ -23879,7 +24898,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       public gauge.messages.Api.SpecsResponseOrBuilder getSpecsResponseOrBuilder() {
         if (specsResponseBuilder_ != null) {
@@ -23894,7 +24913,7 @@ public final class Api {
        *&#47; [GetAllSpecsResponse](#gauge.messages.GetAllSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.SpecsResponse specsResponse = 10;</code>
+       * <code>.gauge.messages.SpecsResponse specsResponse = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.SpecsResponse, gauge.messages.Api.SpecsResponse.Builder, gauge.messages.Api.SpecsResponseOrBuilder> 
@@ -23918,7 +24937,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public boolean hasStepValueRequest() {
         return stepValueRequestBuilder_ != null || stepValueRequest_ != null;
@@ -23928,7 +24947,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public gauge.messages.Api.GetStepValueRequest getStepValueRequest() {
         if (stepValueRequestBuilder_ == null) {
@@ -23942,7 +24961,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public Builder setStepValueRequest(gauge.messages.Api.GetStepValueRequest value) {
         if (stepValueRequestBuilder_ == null) {
@@ -23962,7 +24981,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public Builder setStepValueRequest(
           gauge.messages.Api.GetStepValueRequest.Builder builderForValue) {
@@ -23980,7 +24999,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public Builder mergeStepValueRequest(gauge.messages.Api.GetStepValueRequest value) {
         if (stepValueRequestBuilder_ == null) {
@@ -24002,7 +25021,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public Builder clearStepValueRequest() {
         if (stepValueRequestBuilder_ == null) {
@@ -24020,7 +25039,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public gauge.messages.Api.GetStepValueRequest.Builder getStepValueRequestBuilder() {
         
@@ -24032,7 +25051,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       public gauge.messages.Api.GetStepValueRequestOrBuilder getStepValueRequestOrBuilder() {
         if (stepValueRequestBuilder_ != null) {
@@ -24047,7 +25066,7 @@ public final class Api {
        *&#47; [GetStepValueRequest](#gauge.messages.GetStepValueRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
+       * <code>.gauge.messages.GetStepValueRequest stepValueRequest = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetStepValueRequest, gauge.messages.Api.GetStepValueRequest.Builder, gauge.messages.Api.GetStepValueRequestOrBuilder> 
@@ -24071,7 +25090,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public boolean hasStepValueResponse() {
         return stepValueResponseBuilder_ != null || stepValueResponse_ != null;
@@ -24081,7 +25100,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public gauge.messages.Api.GetStepValueResponse getStepValueResponse() {
         if (stepValueResponseBuilder_ == null) {
@@ -24095,7 +25114,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public Builder setStepValueResponse(gauge.messages.Api.GetStepValueResponse value) {
         if (stepValueResponseBuilder_ == null) {
@@ -24115,7 +25134,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public Builder setStepValueResponse(
           gauge.messages.Api.GetStepValueResponse.Builder builderForValue) {
@@ -24133,7 +25152,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public Builder mergeStepValueResponse(gauge.messages.Api.GetStepValueResponse value) {
         if (stepValueResponseBuilder_ == null) {
@@ -24155,7 +25174,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public Builder clearStepValueResponse() {
         if (stepValueResponseBuilder_ == null) {
@@ -24173,7 +25192,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public gauge.messages.Api.GetStepValueResponse.Builder getStepValueResponseBuilder() {
         
@@ -24185,7 +25204,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       public gauge.messages.Api.GetStepValueResponseOrBuilder getStepValueResponseOrBuilder() {
         if (stepValueResponseBuilder_ != null) {
@@ -24200,7 +25219,7 @@ public final class Api {
        *&#47; [GetStepValueResponse](#gauge.messages.GetStepValueResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
+       * <code>.gauge.messages.GetStepValueResponse stepValueResponse = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetStepValueResponse, gauge.messages.Api.GetStepValueResponse.Builder, gauge.messages.Api.GetStepValueResponseOrBuilder> 
@@ -24224,7 +25243,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public boolean hasLibPathRequest() {
         return libPathRequestBuilder_ != null || libPathRequest_ != null;
@@ -24234,7 +25253,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathRequest getLibPathRequest() {
         if (libPathRequestBuilder_ == null) {
@@ -24248,7 +25267,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public Builder setLibPathRequest(gauge.messages.Api.GetLanguagePluginLibPathRequest value) {
         if (libPathRequestBuilder_ == null) {
@@ -24268,7 +25287,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public Builder setLibPathRequest(
           gauge.messages.Api.GetLanguagePluginLibPathRequest.Builder builderForValue) {
@@ -24286,7 +25305,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public Builder mergeLibPathRequest(gauge.messages.Api.GetLanguagePluginLibPathRequest value) {
         if (libPathRequestBuilder_ == null) {
@@ -24308,7 +25327,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public Builder clearLibPathRequest() {
         if (libPathRequestBuilder_ == null) {
@@ -24326,7 +25345,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathRequest.Builder getLibPathRequestBuilder() {
         
@@ -24338,7 +25357,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathRequestOrBuilder getLibPathRequestOrBuilder() {
         if (libPathRequestBuilder_ != null) {
@@ -24353,7 +25372,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathRequest](#gauge.messages.GetLanguagePluginLibPathRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathRequest libPathRequest = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetLanguagePluginLibPathRequest, gauge.messages.Api.GetLanguagePluginLibPathRequest.Builder, gauge.messages.Api.GetLanguagePluginLibPathRequestOrBuilder> 
@@ -24377,7 +25396,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public boolean hasLibPathResponse() {
         return libPathResponseBuilder_ != null || libPathResponse_ != null;
@@ -24387,7 +25406,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathResponse getLibPathResponse() {
         if (libPathResponseBuilder_ == null) {
@@ -24401,7 +25420,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public Builder setLibPathResponse(gauge.messages.Api.GetLanguagePluginLibPathResponse value) {
         if (libPathResponseBuilder_ == null) {
@@ -24421,7 +25440,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public Builder setLibPathResponse(
           gauge.messages.Api.GetLanguagePluginLibPathResponse.Builder builderForValue) {
@@ -24439,7 +25458,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public Builder mergeLibPathResponse(gauge.messages.Api.GetLanguagePluginLibPathResponse value) {
         if (libPathResponseBuilder_ == null) {
@@ -24461,7 +25480,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public Builder clearLibPathResponse() {
         if (libPathResponseBuilder_ == null) {
@@ -24479,7 +25498,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathResponse.Builder getLibPathResponseBuilder() {
         
@@ -24491,7 +25510,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       public gauge.messages.Api.GetLanguagePluginLibPathResponseOrBuilder getLibPathResponseOrBuilder() {
         if (libPathResponseBuilder_ != null) {
@@ -24506,7 +25525,7 @@ public final class Api {
        *&#47; [GetLanguagePluginLibPathResponse](#gauge.messages.GetLanguagePluginLibPathResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
+       * <code>.gauge.messages.GetLanguagePluginLibPathResponse libPathResponse = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetLanguagePluginLibPathResponse, gauge.messages.Api.GetLanguagePluginLibPathResponse.Builder, gauge.messages.Api.GetLanguagePluginLibPathResponseOrBuilder> 
@@ -24530,7 +25549,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public boolean hasError() {
         return errorBuilder_ != null || error_ != null;
@@ -24540,7 +25559,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public gauge.messages.Api.ErrorResponse getError() {
         if (errorBuilder_ == null) {
@@ -24554,7 +25573,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public Builder setError(gauge.messages.Api.ErrorResponse value) {
         if (errorBuilder_ == null) {
@@ -24574,7 +25593,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public Builder setError(
           gauge.messages.Api.ErrorResponse.Builder builderForValue) {
@@ -24592,7 +25611,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public Builder mergeError(gauge.messages.Api.ErrorResponse value) {
         if (errorBuilder_ == null) {
@@ -24614,7 +25633,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public Builder clearError() {
         if (errorBuilder_ == null) {
@@ -24632,7 +25651,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public gauge.messages.Api.ErrorResponse.Builder getErrorBuilder() {
         
@@ -24644,7 +25663,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       public gauge.messages.Api.ErrorResponseOrBuilder getErrorOrBuilder() {
         if (errorBuilder_ != null) {
@@ -24659,7 +25678,7 @@ public final class Api {
        *&#47; [ErrorResponse](#gauge.messages.ErrorResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ErrorResponse error = 15;</code>
+       * <code>.gauge.messages.ErrorResponse error = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.ErrorResponse, gauge.messages.Api.ErrorResponse.Builder, gauge.messages.Api.ErrorResponseOrBuilder> 
@@ -24683,7 +25702,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public boolean hasAllConceptsRequest() {
         return allConceptsRequestBuilder_ != null || allConceptsRequest_ != null;
@@ -24693,7 +25712,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public gauge.messages.Api.GetAllConceptsRequest getAllConceptsRequest() {
         if (allConceptsRequestBuilder_ == null) {
@@ -24707,7 +25726,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public Builder setAllConceptsRequest(gauge.messages.Api.GetAllConceptsRequest value) {
         if (allConceptsRequestBuilder_ == null) {
@@ -24727,7 +25746,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public Builder setAllConceptsRequest(
           gauge.messages.Api.GetAllConceptsRequest.Builder builderForValue) {
@@ -24745,7 +25764,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public Builder mergeAllConceptsRequest(gauge.messages.Api.GetAllConceptsRequest value) {
         if (allConceptsRequestBuilder_ == null) {
@@ -24767,7 +25786,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public Builder clearAllConceptsRequest() {
         if (allConceptsRequestBuilder_ == null) {
@@ -24785,7 +25804,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public gauge.messages.Api.GetAllConceptsRequest.Builder getAllConceptsRequestBuilder() {
         
@@ -24797,7 +25816,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       public gauge.messages.Api.GetAllConceptsRequestOrBuilder getAllConceptsRequestOrBuilder() {
         if (allConceptsRequestBuilder_ != null) {
@@ -24812,7 +25831,7 @@ public final class Api {
        *&#47; [GetAllConceptsRequest](#gauge.messages.GetAllConceptsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
+       * <code>.gauge.messages.GetAllConceptsRequest allConceptsRequest = 16;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetAllConceptsRequest, gauge.messages.Api.GetAllConceptsRequest.Builder, gauge.messages.Api.GetAllConceptsRequestOrBuilder> 
@@ -24836,7 +25855,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public boolean hasAllConceptsResponse() {
         return allConceptsResponseBuilder_ != null || allConceptsResponse_ != null;
@@ -24846,7 +25865,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public gauge.messages.Api.GetAllConceptsResponse getAllConceptsResponse() {
         if (allConceptsResponseBuilder_ == null) {
@@ -24860,7 +25879,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public Builder setAllConceptsResponse(gauge.messages.Api.GetAllConceptsResponse value) {
         if (allConceptsResponseBuilder_ == null) {
@@ -24880,7 +25899,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public Builder setAllConceptsResponse(
           gauge.messages.Api.GetAllConceptsResponse.Builder builderForValue) {
@@ -24898,7 +25917,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public Builder mergeAllConceptsResponse(gauge.messages.Api.GetAllConceptsResponse value) {
         if (allConceptsResponseBuilder_ == null) {
@@ -24920,7 +25939,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public Builder clearAllConceptsResponse() {
         if (allConceptsResponseBuilder_ == null) {
@@ -24938,7 +25957,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public gauge.messages.Api.GetAllConceptsResponse.Builder getAllConceptsResponseBuilder() {
         
@@ -24950,7 +25969,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       public gauge.messages.Api.GetAllConceptsResponseOrBuilder getAllConceptsResponseOrBuilder() {
         if (allConceptsResponseBuilder_ != null) {
@@ -24965,7 +25984,7 @@ public final class Api {
        *&#47; [GetAllConceptsResponse](#gauge.messages.GetAllConceptsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
+       * <code>.gauge.messages.GetAllConceptsResponse allConceptsResponse = 17;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.GetAllConceptsResponse, gauge.messages.Api.GetAllConceptsResponse.Builder, gauge.messages.Api.GetAllConceptsResponseOrBuilder> 
@@ -24989,7 +26008,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public boolean hasPerformRefactoringRequest() {
         return performRefactoringRequestBuilder_ != null || performRefactoringRequest_ != null;
@@ -24999,7 +26018,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public gauge.messages.Api.PerformRefactoringRequest getPerformRefactoringRequest() {
         if (performRefactoringRequestBuilder_ == null) {
@@ -25013,7 +26032,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public Builder setPerformRefactoringRequest(gauge.messages.Api.PerformRefactoringRequest value) {
         if (performRefactoringRequestBuilder_ == null) {
@@ -25033,7 +26052,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public Builder setPerformRefactoringRequest(
           gauge.messages.Api.PerformRefactoringRequest.Builder builderForValue) {
@@ -25051,7 +26070,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public Builder mergePerformRefactoringRequest(gauge.messages.Api.PerformRefactoringRequest value) {
         if (performRefactoringRequestBuilder_ == null) {
@@ -25073,7 +26092,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public Builder clearPerformRefactoringRequest() {
         if (performRefactoringRequestBuilder_ == null) {
@@ -25091,7 +26110,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public gauge.messages.Api.PerformRefactoringRequest.Builder getPerformRefactoringRequestBuilder() {
         
@@ -25103,7 +26122,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       public gauge.messages.Api.PerformRefactoringRequestOrBuilder getPerformRefactoringRequestOrBuilder() {
         if (performRefactoringRequestBuilder_ != null) {
@@ -25118,7 +26137,7 @@ public final class Api {
        *&#47; [PerformRefactoringRequest](#gauge.messages.PerformRefactoringRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
+       * <code>.gauge.messages.PerformRefactoringRequest performRefactoringRequest = 18;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.PerformRefactoringRequest, gauge.messages.Api.PerformRefactoringRequest.Builder, gauge.messages.Api.PerformRefactoringRequestOrBuilder> 
@@ -25142,7 +26161,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public boolean hasPerformRefactoringResponse() {
         return performRefactoringResponseBuilder_ != null || performRefactoringResponse_ != null;
@@ -25152,7 +26171,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public gauge.messages.Api.PerformRefactoringResponse getPerformRefactoringResponse() {
         if (performRefactoringResponseBuilder_ == null) {
@@ -25166,7 +26185,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public Builder setPerformRefactoringResponse(gauge.messages.Api.PerformRefactoringResponse value) {
         if (performRefactoringResponseBuilder_ == null) {
@@ -25186,7 +26205,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public Builder setPerformRefactoringResponse(
           gauge.messages.Api.PerformRefactoringResponse.Builder builderForValue) {
@@ -25204,7 +26223,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public Builder mergePerformRefactoringResponse(gauge.messages.Api.PerformRefactoringResponse value) {
         if (performRefactoringResponseBuilder_ == null) {
@@ -25226,7 +26245,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public Builder clearPerformRefactoringResponse() {
         if (performRefactoringResponseBuilder_ == null) {
@@ -25244,7 +26263,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public gauge.messages.Api.PerformRefactoringResponse.Builder getPerformRefactoringResponseBuilder() {
         
@@ -25256,7 +26275,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       public gauge.messages.Api.PerformRefactoringResponseOrBuilder getPerformRefactoringResponseOrBuilder() {
         if (performRefactoringResponseBuilder_ != null) {
@@ -25271,7 +26290,7 @@ public final class Api {
        *&#47; [PerformRefactoringResponse](#gauge.messages.PerformRefactoringResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
+       * <code>.gauge.messages.PerformRefactoringResponse performRefactoringResponse = 19;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.PerformRefactoringResponse, gauge.messages.Api.PerformRefactoringResponse.Builder, gauge.messages.Api.PerformRefactoringResponseOrBuilder> 
@@ -25295,7 +26314,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public boolean hasExtractConceptRequest() {
         return extractConceptRequestBuilder_ != null || extractConceptRequest_ != null;
@@ -25305,7 +26324,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public gauge.messages.Api.ExtractConceptRequest getExtractConceptRequest() {
         if (extractConceptRequestBuilder_ == null) {
@@ -25319,7 +26338,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public Builder setExtractConceptRequest(gauge.messages.Api.ExtractConceptRequest value) {
         if (extractConceptRequestBuilder_ == null) {
@@ -25339,7 +26358,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public Builder setExtractConceptRequest(
           gauge.messages.Api.ExtractConceptRequest.Builder builderForValue) {
@@ -25357,7 +26376,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public Builder mergeExtractConceptRequest(gauge.messages.Api.ExtractConceptRequest value) {
         if (extractConceptRequestBuilder_ == null) {
@@ -25379,7 +26398,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public Builder clearExtractConceptRequest() {
         if (extractConceptRequestBuilder_ == null) {
@@ -25397,7 +26416,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public gauge.messages.Api.ExtractConceptRequest.Builder getExtractConceptRequestBuilder() {
         
@@ -25409,7 +26428,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       public gauge.messages.Api.ExtractConceptRequestOrBuilder getExtractConceptRequestOrBuilder() {
         if (extractConceptRequestBuilder_ != null) {
@@ -25424,7 +26443,7 @@ public final class Api {
        *&#47; [ExtractConceptRequest](#gauge.messages.ExtractConceptRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
+       * <code>.gauge.messages.ExtractConceptRequest extractConceptRequest = 20;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.ExtractConceptRequest, gauge.messages.Api.ExtractConceptRequest.Builder, gauge.messages.Api.ExtractConceptRequestOrBuilder> 
@@ -25448,7 +26467,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public boolean hasExtractConceptResponse() {
         return extractConceptResponseBuilder_ != null || extractConceptResponse_ != null;
@@ -25458,7 +26477,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public gauge.messages.Api.ExtractConceptResponse getExtractConceptResponse() {
         if (extractConceptResponseBuilder_ == null) {
@@ -25472,7 +26491,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public Builder setExtractConceptResponse(gauge.messages.Api.ExtractConceptResponse value) {
         if (extractConceptResponseBuilder_ == null) {
@@ -25492,7 +26511,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public Builder setExtractConceptResponse(
           gauge.messages.Api.ExtractConceptResponse.Builder builderForValue) {
@@ -25510,7 +26529,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public Builder mergeExtractConceptResponse(gauge.messages.Api.ExtractConceptResponse value) {
         if (extractConceptResponseBuilder_ == null) {
@@ -25532,7 +26551,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public Builder clearExtractConceptResponse() {
         if (extractConceptResponseBuilder_ == null) {
@@ -25550,7 +26569,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public gauge.messages.Api.ExtractConceptResponse.Builder getExtractConceptResponseBuilder() {
         
@@ -25562,7 +26581,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       public gauge.messages.Api.ExtractConceptResponseOrBuilder getExtractConceptResponseOrBuilder() {
         if (extractConceptResponseBuilder_ != null) {
@@ -25577,7 +26596,7 @@ public final class Api {
        *&#47; [ExtractConceptResponse](#gauge.messages.ExtractConceptResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
+       * <code>.gauge.messages.ExtractConceptResponse extractConceptResponse = 21;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.ExtractConceptResponse, gauge.messages.Api.ExtractConceptResponse.Builder, gauge.messages.Api.ExtractConceptResponseOrBuilder> 
@@ -25601,7 +26620,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public boolean hasFormatSpecsRequest() {
         return formatSpecsRequestBuilder_ != null || formatSpecsRequest_ != null;
@@ -25611,7 +26630,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public gauge.messages.Api.FormatSpecsRequest getFormatSpecsRequest() {
         if (formatSpecsRequestBuilder_ == null) {
@@ -25625,7 +26644,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public Builder setFormatSpecsRequest(gauge.messages.Api.FormatSpecsRequest value) {
         if (formatSpecsRequestBuilder_ == null) {
@@ -25645,7 +26664,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public Builder setFormatSpecsRequest(
           gauge.messages.Api.FormatSpecsRequest.Builder builderForValue) {
@@ -25663,7 +26682,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public Builder mergeFormatSpecsRequest(gauge.messages.Api.FormatSpecsRequest value) {
         if (formatSpecsRequestBuilder_ == null) {
@@ -25685,7 +26704,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public Builder clearFormatSpecsRequest() {
         if (formatSpecsRequestBuilder_ == null) {
@@ -25703,7 +26722,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public gauge.messages.Api.FormatSpecsRequest.Builder getFormatSpecsRequestBuilder() {
         
@@ -25715,7 +26734,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       public gauge.messages.Api.FormatSpecsRequestOrBuilder getFormatSpecsRequestOrBuilder() {
         if (formatSpecsRequestBuilder_ != null) {
@@ -25730,7 +26749,7 @@ public final class Api {
        *&#47; [FormatSpecsRequest] (#gauge.messages.FormatSpecsRequest)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
+       * <code>.gauge.messages.FormatSpecsRequest formatSpecsRequest = 22;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.FormatSpecsRequest, gauge.messages.Api.FormatSpecsRequest.Builder, gauge.messages.Api.FormatSpecsRequestOrBuilder> 
@@ -25754,7 +26773,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public boolean hasFormatSpecsResponse() {
         return formatSpecsResponseBuilder_ != null || formatSpecsResponse_ != null;
@@ -25764,7 +26783,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public gauge.messages.Api.FormatSpecsResponse getFormatSpecsResponse() {
         if (formatSpecsResponseBuilder_ == null) {
@@ -25778,7 +26797,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public Builder setFormatSpecsResponse(gauge.messages.Api.FormatSpecsResponse value) {
         if (formatSpecsResponseBuilder_ == null) {
@@ -25798,7 +26817,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public Builder setFormatSpecsResponse(
           gauge.messages.Api.FormatSpecsResponse.Builder builderForValue) {
@@ -25816,7 +26835,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public Builder mergeFormatSpecsResponse(gauge.messages.Api.FormatSpecsResponse value) {
         if (formatSpecsResponseBuilder_ == null) {
@@ -25838,7 +26857,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public Builder clearFormatSpecsResponse() {
         if (formatSpecsResponseBuilder_ == null) {
@@ -25856,7 +26875,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public gauge.messages.Api.FormatSpecsResponse.Builder getFormatSpecsResponseBuilder() {
         
@@ -25868,7 +26887,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       public gauge.messages.Api.FormatSpecsResponseOrBuilder getFormatSpecsResponseOrBuilder() {
         if (formatSpecsResponseBuilder_ != null) {
@@ -25883,7 +26902,7 @@ public final class Api {
        *&#47; [FormatSpecsResponse] (#gauge.messages.FormatSpecsResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
+       * <code>.gauge.messages.FormatSpecsResponse formatSpecsResponse = 23;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.FormatSpecsResponse, gauge.messages.Api.FormatSpecsResponse.Builder, gauge.messages.Api.FormatSpecsResponseOrBuilder> 
@@ -25907,7 +26926,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public boolean hasUnsupportedApiMessageResponse() {
         return unsupportedApiMessageResponseBuilder_ != null || unsupportedApiMessageResponse_ != null;
@@ -25917,7 +26936,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public gauge.messages.Api.UnsupportedApiMessageResponse getUnsupportedApiMessageResponse() {
         if (unsupportedApiMessageResponseBuilder_ == null) {
@@ -25931,7 +26950,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public Builder setUnsupportedApiMessageResponse(gauge.messages.Api.UnsupportedApiMessageResponse value) {
         if (unsupportedApiMessageResponseBuilder_ == null) {
@@ -25951,7 +26970,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public Builder setUnsupportedApiMessageResponse(
           gauge.messages.Api.UnsupportedApiMessageResponse.Builder builderForValue) {
@@ -25969,7 +26988,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public Builder mergeUnsupportedApiMessageResponse(gauge.messages.Api.UnsupportedApiMessageResponse value) {
         if (unsupportedApiMessageResponseBuilder_ == null) {
@@ -25991,7 +27010,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public Builder clearUnsupportedApiMessageResponse() {
         if (unsupportedApiMessageResponseBuilder_ == null) {
@@ -26009,7 +27028,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public gauge.messages.Api.UnsupportedApiMessageResponse.Builder getUnsupportedApiMessageResponseBuilder() {
         
@@ -26021,7 +27040,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       public gauge.messages.Api.UnsupportedApiMessageResponseOrBuilder getUnsupportedApiMessageResponseOrBuilder() {
         if (unsupportedApiMessageResponseBuilder_ != null) {
@@ -26036,7 +27055,7 @@ public final class Api {
        *&#47; [UnsupportedApiMessageResponse] (#gauge.messages.UnsupportedApiMessageResponse)
        * </pre>
        *
-       * <code>optional .gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
+       * <code>.gauge.messages.UnsupportedApiMessageResponse unsupportedApiMessageResponse = 24;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           gauge.messages.Api.UnsupportedApiMessageResponse, gauge.messages.Api.UnsupportedApiMessageResponse.Builder, gauge.messages.Api.UnsupportedApiMessageResponseOrBuilder> 
@@ -26050,6 +27069,312 @@ public final class Api {
           unsupportedApiMessageResponse_ = null;
         }
         return unsupportedApiMessageResponseBuilder_;
+      }
+
+      private gauge.messages.Api.PerformRefreshRequest performRefreshRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          gauge.messages.Api.PerformRefreshRequest, gauge.messages.Api.PerformRefreshRequest.Builder, gauge.messages.Api.PerformRefreshRequestOrBuilder> performRefreshRequestBuilder_;
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public boolean hasPerformRefreshRequest() {
+        return performRefreshRequestBuilder_ != null || performRefreshRequest_ != null;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public gauge.messages.Api.PerformRefreshRequest getPerformRefreshRequest() {
+        if (performRefreshRequestBuilder_ == null) {
+          return performRefreshRequest_ == null ? gauge.messages.Api.PerformRefreshRequest.getDefaultInstance() : performRefreshRequest_;
+        } else {
+          return performRefreshRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public Builder setPerformRefreshRequest(gauge.messages.Api.PerformRefreshRequest value) {
+        if (performRefreshRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          performRefreshRequest_ = value;
+          onChanged();
+        } else {
+          performRefreshRequestBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public Builder setPerformRefreshRequest(
+          gauge.messages.Api.PerformRefreshRequest.Builder builderForValue) {
+        if (performRefreshRequestBuilder_ == null) {
+          performRefreshRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          performRefreshRequestBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public Builder mergePerformRefreshRequest(gauge.messages.Api.PerformRefreshRequest value) {
+        if (performRefreshRequestBuilder_ == null) {
+          if (performRefreshRequest_ != null) {
+            performRefreshRequest_ =
+              gauge.messages.Api.PerformRefreshRequest.newBuilder(performRefreshRequest_).mergeFrom(value).buildPartial();
+          } else {
+            performRefreshRequest_ = value;
+          }
+          onChanged();
+        } else {
+          performRefreshRequestBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public Builder clearPerformRefreshRequest() {
+        if (performRefreshRequestBuilder_ == null) {
+          performRefreshRequest_ = null;
+          onChanged();
+        } else {
+          performRefreshRequest_ = null;
+          performRefreshRequestBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public gauge.messages.Api.PerformRefreshRequest.Builder getPerformRefreshRequestBuilder() {
+        
+        onChanged();
+        return getPerformRefreshRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      public gauge.messages.Api.PerformRefreshRequestOrBuilder getPerformRefreshRequestOrBuilder() {
+        if (performRefreshRequestBuilder_ != null) {
+          return performRefreshRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return performRefreshRequest_ == null ?
+              gauge.messages.Api.PerformRefreshRequest.getDefaultInstance() : performRefreshRequest_;
+        }
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshRequest](#gauge.messages.PerformRefreshRequest)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshRequest performRefreshRequest = 25;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          gauge.messages.Api.PerformRefreshRequest, gauge.messages.Api.PerformRefreshRequest.Builder, gauge.messages.Api.PerformRefreshRequestOrBuilder> 
+          getPerformRefreshRequestFieldBuilder() {
+        if (performRefreshRequestBuilder_ == null) {
+          performRefreshRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              gauge.messages.Api.PerformRefreshRequest, gauge.messages.Api.PerformRefreshRequest.Builder, gauge.messages.Api.PerformRefreshRequestOrBuilder>(
+                  getPerformRefreshRequest(),
+                  getParentForChildren(),
+                  isClean());
+          performRefreshRequest_ = null;
+        }
+        return performRefreshRequestBuilder_;
+      }
+
+      private gauge.messages.Api.PerformRefreshResponse performRefreshResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          gauge.messages.Api.PerformRefreshResponse, gauge.messages.Api.PerformRefreshResponse.Builder, gauge.messages.Api.PerformRefreshResponseOrBuilder> performRefreshResponseBuilder_;
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public boolean hasPerformRefreshResponse() {
+        return performRefreshResponseBuilder_ != null || performRefreshResponse_ != null;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public gauge.messages.Api.PerformRefreshResponse getPerformRefreshResponse() {
+        if (performRefreshResponseBuilder_ == null) {
+          return performRefreshResponse_ == null ? gauge.messages.Api.PerformRefreshResponse.getDefaultInstance() : performRefreshResponse_;
+        } else {
+          return performRefreshResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public Builder setPerformRefreshResponse(gauge.messages.Api.PerformRefreshResponse value) {
+        if (performRefreshResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          performRefreshResponse_ = value;
+          onChanged();
+        } else {
+          performRefreshResponseBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public Builder setPerformRefreshResponse(
+          gauge.messages.Api.PerformRefreshResponse.Builder builderForValue) {
+        if (performRefreshResponseBuilder_ == null) {
+          performRefreshResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          performRefreshResponseBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public Builder mergePerformRefreshResponse(gauge.messages.Api.PerformRefreshResponse value) {
+        if (performRefreshResponseBuilder_ == null) {
+          if (performRefreshResponse_ != null) {
+            performRefreshResponse_ =
+              gauge.messages.Api.PerformRefreshResponse.newBuilder(performRefreshResponse_).mergeFrom(value).buildPartial();
+          } else {
+            performRefreshResponse_ = value;
+          }
+          onChanged();
+        } else {
+          performRefreshResponseBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public Builder clearPerformRefreshResponse() {
+        if (performRefreshResponseBuilder_ == null) {
+          performRefreshResponse_ = null;
+          onChanged();
+        } else {
+          performRefreshResponse_ = null;
+          performRefreshResponseBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public gauge.messages.Api.PerformRefreshResponse.Builder getPerformRefreshResponseBuilder() {
+        
+        onChanged();
+        return getPerformRefreshResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      public gauge.messages.Api.PerformRefreshResponseOrBuilder getPerformRefreshResponseOrBuilder() {
+        if (performRefreshResponseBuilder_ != null) {
+          return performRefreshResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return performRefreshResponse_ == null ?
+              gauge.messages.Api.PerformRefreshResponse.getDefaultInstance() : performRefreshResponse_;
+        }
+      }
+      /**
+       * <pre>
+       *&#47; [PerformRefreshResponse](#gauge.messages.PerformRefreshResponse)
+       * </pre>
+       *
+       * <code>.gauge.messages.PerformRefreshResponse performRefreshResponse = 26;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          gauge.messages.Api.PerformRefreshResponse, gauge.messages.Api.PerformRefreshResponse.Builder, gauge.messages.Api.PerformRefreshResponseOrBuilder> 
+          getPerformRefreshResponseFieldBuilder() {
+        if (performRefreshResponseBuilder_ == null) {
+          performRefreshResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              gauge.messages.Api.PerformRefreshResponse, gauge.messages.Api.PerformRefreshResponse.Builder, gauge.messages.Api.PerformRefreshResponseOrBuilder>(
+                  getPerformRefreshResponse(),
+                  getParentForChildren(),
+                  isClean());
+          performRefreshResponse_ = null;
+        }
+        return performRefreshResponseBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -26146,11 +27471,6 @@ public final class Api {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_gauge_messages_SpecsResponse_SpecDetail_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_gauge_messages_Error_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_gauge_messages_Error_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_gauge_messages_GetAllConceptsRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -26200,6 +27520,16 @@ public final class Api {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_gauge_messages_PerformRefactoringResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_gauge_messages_PerformRefreshRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_gauge_messages_PerformRefreshRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_gauge_messages_PerformRefreshResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_gauge_messages_PerformRefreshResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_gauge_messages_ExtractConceptInfoRequest_descriptor;
   private static final 
@@ -26266,95 +27596,101 @@ public final class Api {
       "(.gauge.messages.SpecsResponse.SpecDetai",
       "l\032a\n\nSpecDetail\022\'\n\004spec\030\001 \001(\0132\031.gauge.me" +
       "ssages.ProtoSpec\022*\n\013parseErrors\030\002 \003(\0132\025." +
-      "gauge.messages.Error\">\n\005Error\022\020\n\010filenam" +
-      "e\030\001 \001(\t\022\022\n\nlineNumber\030\002 \001(\005\022\017\n\007message\030\003" +
-      " \001(\t\"\027\n\025GetAllConceptsRequest\"G\n\026GetAllC" +
-      "onceptsResponse\022-\n\010concepts\030\001 \003(\0132\033.gaug" +
-      "e.messages.ConceptInfo\"f\n\013ConceptInfo\0221\n" +
-      "\tstepValue\030\001 \001(\0132\036.gauge.messages.ProtoS" +
-      "tepValue\022\020\n\010filepath\030\002 \001(\t\022\022\n\nlineNumber" +
-      "\030\003 \001(\005\"?\n\023GetStepValueRequest\022\020\n\010stepTex",
-      "t\030\001 \001(\t\022\026\n\016hasInlineTable\030\002 \001(\010\"I\n\024GetSt" +
-      "epValueResponse\0221\n\tstepValue\030\001 \001(\0132\036.gau" +
-      "ge.messages.ProtoStepValue\"3\n\037GetLanguag" +
-      "ePluginLibPathRequest\022\020\n\010language\030\001 \001(\t\"" +
-      "0\n GetLanguagePluginLibPathResponse\022\014\n\004p" +
-      "ath\030\001 \001(\t\"\036\n\rErrorResponse\022\r\n\005error\030\001 \001(" +
-      "\t\"=\n\031PerformRefactoringRequest\022\017\n\007oldSte" +
-      "p\030\001 \001(\t\022\017\n\007newStep\030\002 \001(\t\"S\n\032PerformRefac" +
-      "toringResponse\022\017\n\007success\030\001 \001(\010\022\016\n\006error" +
-      "s\030\002 \003(\t\022\024\n\014filesChanged\030\003 \003(\t\")\n\031Extract",
-      "ConceptInfoRequest\022\014\n\004text\030\001 \001(\t\"\321\001\n\025Ext" +
-      "ractConceptRequest\022)\n\013conceptName\030\001 \001(\0132" +
-      "\024.gauge.messages.step\022#\n\005steps\030\002 \003(\0132\024.g" +
-      "auge.messages.step\022\033\n\023changeAcrossProjec" +
-      "t\030\003 \001(\010\022\027\n\017conceptFileName\030\004 \001(\t\0222\n\020sele" +
-      "ctedTextInfo\030\005 \001(\0132\030.gauge.messages.text" +
-      "Info\"G\n\010textInfo\022\020\n\010fileName\030\001 \001(\t\022\026\n\016st" +
-      "artingLineNo\030\002 \001(\005\022\021\n\tendLineNo\030\003 \001(\005\";\n" +
-      "\004step\022\014\n\004name\030\001 \001(\t\022\r\n\005table\030\002 \001(\t\022\026\n\016pa" +
-      "ramTableName\030\003 \001(\t\"P\n\026ExtractConceptResp",
-      "onse\022\021\n\tisSuccess\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\022\024" +
-      "\n\014filesChanged\030\003 \003(\t\"#\n\022FormatSpecsReque" +
-      "st\022\r\n\005specs\030\001 \003(\t\"7\n\023FormatSpecsResponse" +
-      "\022\016\n\006errors\030\001 \003(\t\022\020\n\010warnings\030\002 \003(\t\"\037\n\035Un" +
-      "supportedApiMessageResponse\"\251\021\n\nAPIMessa" +
-      "ge\022>\n\013messageType\030\001 \001(\0162).gauge.messages" +
-      ".APIMessage.APIMessageType\022\021\n\tmessageId\030" +
-      "\002 \001(\003\022A\n\022projectRootRequest\030\003 \001(\0132%.gaug" +
-      "e.messages.GetProjectRootRequest\022C\n\023proj" +
-      "ectRootResponse\030\004 \001(\0132&.gauge.messages.G",
-      "etProjectRootResponse\022K\n\027installationRoo" +
-      "tRequest\030\005 \001(\0132*.gauge.messages.GetInsta" +
-      "llationRootRequest\022M\n\030installationRootRe" +
-      "sponse\030\006 \001(\0132+.gauge.messages.GetInstall" +
-      "ationRootResponse\022;\n\017allStepsRequest\030\007 \001" +
-      "(\0132\".gauge.messages.GetAllStepsRequest\022=" +
-      "\n\020allStepsResponse\030\010 \001(\0132#.gauge.message" +
-      "s.GetAllStepsResponse\0222\n\014specsRequest\030\t " +
-      "\001(\0132\034.gauge.messages.SpecsRequest\0224\n\rspe" +
-      "csResponse\030\n \001(\0132\035.gauge.messages.SpecsR",
-      "esponse\022=\n\020stepValueRequest\030\013 \001(\0132#.gaug" +
-      "e.messages.GetStepValueRequest\022?\n\021stepVa" +
-      "lueResponse\030\014 \001(\0132$.gauge.messages.GetSt" +
-      "epValueResponse\022G\n\016libPathRequest\030\r \001(\0132" +
-      "/.gauge.messages.GetLanguagePluginLibPat" +
-      "hRequest\022I\n\017libPathResponse\030\016 \001(\01320.gaug" +
-      "e.messages.GetLanguagePluginLibPathRespo" +
-      "nse\022,\n\005error\030\017 \001(\0132\035.gauge.messages.Erro" +
-      "rResponse\022A\n\022allConceptsRequest\030\020 \001(\0132%." +
-      "gauge.messages.GetAllConceptsRequest\022C\n\023",
-      "allConceptsResponse\030\021 \001(\0132&.gauge.messag" +
-      "es.GetAllConceptsResponse\022L\n\031performRefa" +
-      "ctoringRequest\030\022 \001(\0132).gauge.messages.Pe" +
-      "rformRefactoringRequest\022N\n\032performRefact" +
-      "oringResponse\030\023 \001(\0132*.gauge.messages.Per" +
-      "formRefactoringResponse\022D\n\025extractConcep" +
-      "tRequest\030\024 \001(\0132%.gauge.messages.ExtractC" +
-      "onceptRequest\022F\n\026extractConceptResponse\030" +
-      "\025 \001(\0132&.gauge.messages.ExtractConceptRes" +
-      "ponse\022>\n\022formatSpecsRequest\030\026 \001(\0132\".gaug",
-      "e.messages.FormatSpecsRequest\022@\n\023formatS" +
-      "pecsResponse\030\027 \001(\0132#.gauge.messages.Form" +
-      "atSpecsResponse\022T\n\035unsupportedApiMessage" +
-      "Response\030\030 \001(\0132-.gauge.messages.Unsuppor" +
-      "tedApiMessageResponse\"\357\004\n\016APIMessageType" +
-      "\022\031\n\025GetProjectRootRequest\020\000\022\032\n\026GetProjec" +
-      "tRootResponse\020\001\022\036\n\032GetInstallationRootRe" +
-      "quest\020\002\022\037\n\033GetInstallationRootResponse\020\003" +
-      "\022\026\n\022GetAllStepsRequest\020\004\022\026\n\022GetAllStepRe" +
-      "sponse\020\005\022\020\n\014SpecsRequest\020\006\022\021\n\rSpecsRespo",
-      "nse\020\007\022\027\n\023GetStepValueRequest\020\010\022\030\n\024GetSte" +
-      "pValueResponse\020\t\022#\n\037GetLanguagePluginLib" +
-      "PathRequest\020\n\022$\n GetLanguagePluginLibPat" +
-      "hResponse\020\013\022\021\n\rErrorResponse\020\014\022\031\n\025GetAll" +
-      "ConceptsRequest\020\r\022\032\n\026GetAllConceptsRespo" +
-      "nse\020\016\022\035\n\031PerformRefactoringRequest\020\017\022\036\n\032" +
-      "PerformRefactoringResponse\020\020\022\031\n\025ExtractC" +
-      "onceptRequest\020\021\022\032\n\026ExtractConceptRespons" +
-      "e\020\022\022\026\n\022FormatSpecsRequest\020\023\022\027\n\023FormatSpe" +
-      "csResponse\020\024\022!\n\035UnsupportedApiMessageRes",
-      "ponse\020\025B\021\252\002\016Gauge.Messagesb\006proto3"
+      "gauge.messages.Error\"\027\n\025GetAllConceptsRe" +
+      "quest\"G\n\026GetAllConceptsResponse\022-\n\010conce" +
+      "pts\030\001 \003(\0132\033.gauge.messages.ConceptInfo\"f" +
+      "\n\013ConceptInfo\0221\n\tstepValue\030\001 \001(\0132\036.gauge" +
+      ".messages.ProtoStepValue\022\020\n\010filepath\030\002 \001" +
+      "(\t\022\022\n\nlineNumber\030\003 \001(\005\"?\n\023GetStepValueRe" +
+      "quest\022\020\n\010stepText\030\001 \001(\t\022\026\n\016hasInlineTabl" +
+      "e\030\002 \001(\010\"I\n\024GetStepValueResponse\0221\n\tstepV",
+      "alue\030\001 \001(\0132\036.gauge.messages.ProtoStepVal" +
+      "ue\"3\n\037GetLanguagePluginLibPathRequest\022\020\n" +
+      "\010language\030\001 \001(\t\"0\n GetLanguagePluginLibP" +
+      "athResponse\022\014\n\004path\030\001 \001(\t\"\036\n\rErrorRespon" +
+      "se\022\r\n\005error\030\001 \001(\t\"=\n\031PerformRefactoringR" +
+      "equest\022\017\n\007oldStep\030\001 \001(\t\022\017\n\007newStep\030\002 \001(\t" +
+      "\"S\n\032PerformRefactoringResponse\022\017\n\007succes" +
+      "s\030\001 \001(\010\022\016\n\006errors\030\002 \003(\t\022\024\n\014filesChanged\030" +
+      "\003 \003(\t\"&\n\025PerformRefreshRequest\022\r\n\005files\030" +
+      "\001 \003(\t\"8\n\026PerformRefreshResponse\022\017\n\007succe",
+      "ss\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\")\n\031ExtractConcep" +
+      "tInfoRequest\022\014\n\004text\030\001 \001(\t\"\321\001\n\025ExtractCo" +
+      "nceptRequest\022)\n\013conceptName\030\001 \001(\0132\024.gaug" +
+      "e.messages.step\022#\n\005steps\030\002 \003(\0132\024.gauge.m" +
+      "essages.step\022\033\n\023changeAcrossProject\030\003 \001(" +
+      "\010\022\027\n\017conceptFileName\030\004 \001(\t\0222\n\020selectedTe" +
+      "xtInfo\030\005 \001(\0132\030.gauge.messages.textInfo\"G" +
+      "\n\010textInfo\022\020\n\010fileName\030\001 \001(\t\022\026\n\016starting" +
+      "LineNo\030\002 \001(\005\022\021\n\tendLineNo\030\003 \001(\005\";\n\004step\022" +
+      "\014\n\004name\030\001 \001(\t\022\r\n\005table\030\002 \001(\t\022\026\n\016paramTab",
+      "leName\030\003 \001(\t\"P\n\026ExtractConceptResponse\022\021" +
+      "\n\tisSuccess\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\022\024\n\014file" +
+      "sChanged\030\003 \003(\t\"#\n\022FormatSpecsRequest\022\r\n\005" +
+      "specs\030\001 \003(\t\"7\n\023FormatSpecsResponse\022\016\n\006er" +
+      "rors\030\001 \003(\t\022\020\n\010warnings\030\002 \003(\t\"\037\n\035Unsuppor" +
+      "tedApiMessageResponse\"\356\022\n\nAPIMessage\022>\n\013" +
+      "messageType\030\001 \001(\0162).gauge.messages.APIMe" +
+      "ssage.APIMessageType\022\021\n\tmessageId\030\002 \001(\003\022" +
+      "A\n\022projectRootRequest\030\003 \001(\0132%.gauge.mess" +
+      "ages.GetProjectRootRequest\022C\n\023projectRoo",
+      "tResponse\030\004 \001(\0132&.gauge.messages.GetProj" +
+      "ectRootResponse\022K\n\027installationRootReque" +
+      "st\030\005 \001(\0132*.gauge.messages.GetInstallatio" +
+      "nRootRequest\022M\n\030installationRootResponse" +
+      "\030\006 \001(\0132+.gauge.messages.GetInstallationR" +
+      "ootResponse\022;\n\017allStepsRequest\030\007 \001(\0132\".g" +
+      "auge.messages.GetAllStepsRequest\022=\n\020allS" +
+      "tepsResponse\030\010 \001(\0132#.gauge.messages.GetA" +
+      "llStepsResponse\0222\n\014specsRequest\030\t \001(\0132\034." +
+      "gauge.messages.SpecsRequest\0224\n\rspecsResp",
+      "onse\030\n \001(\0132\035.gauge.messages.SpecsRespons" +
+      "e\022=\n\020stepValueRequest\030\013 \001(\0132#.gauge.mess" +
+      "ages.GetStepValueRequest\022?\n\021stepValueRes" +
+      "ponse\030\014 \001(\0132$.gauge.messages.GetStepValu" +
+      "eResponse\022G\n\016libPathRequest\030\r \001(\0132/.gaug" +
+      "e.messages.GetLanguagePluginLibPathReque" +
+      "st\022I\n\017libPathResponse\030\016 \001(\01320.gauge.mess" +
+      "ages.GetLanguagePluginLibPathResponse\022,\n" +
+      "\005error\030\017 \001(\0132\035.gauge.messages.ErrorRespo" +
+      "nse\022A\n\022allConceptsRequest\030\020 \001(\0132%.gauge.",
+      "messages.GetAllConceptsRequest\022C\n\023allCon" +
+      "ceptsResponse\030\021 \001(\0132&.gauge.messages.Get" +
+      "AllConceptsResponse\022L\n\031performRefactorin" +
+      "gRequest\030\022 \001(\0132).gauge.messages.PerformR" +
+      "efactoringRequest\022N\n\032performRefactoringR" +
+      "esponse\030\023 \001(\0132*.gauge.messages.PerformRe" +
+      "factoringResponse\022D\n\025extractConceptReque" +
+      "st\030\024 \001(\0132%.gauge.messages.ExtractConcept" +
+      "Request\022F\n\026extractConceptResponse\030\025 \001(\0132" +
+      "&.gauge.messages.ExtractConceptResponse\022",
+      ">\n\022formatSpecsRequest\030\026 \001(\0132\".gauge.mess" +
+      "ages.FormatSpecsRequest\022@\n\023formatSpecsRe" +
+      "sponse\030\027 \001(\0132#.gauge.messages.FormatSpec" +
+      "sResponse\022T\n\035unsupportedApiMessageRespon" +
+      "se\030\030 \001(\0132-.gauge.messages.UnsupportedApi" +
+      "MessageResponse\022D\n\025performRefreshRequest" +
+      "\030\031 \001(\0132%.gauge.messages.PerformRefreshRe" +
+      "quest\022F\n\026performRefreshResponse\030\032 \001(\0132&." +
+      "gauge.messages.PerformRefreshResponse\"\246\005" +
+      "\n\016APIMessageType\022\031\n\025GetProjectRootReques",
+      "t\020\000\022\032\n\026GetProjectRootResponse\020\001\022\036\n\032GetIn" +
+      "stallationRootRequest\020\002\022\037\n\033GetInstallati" +
+      "onRootResponse\020\003\022\026\n\022GetAllStepsRequest\020\004" +
+      "\022\026\n\022GetAllStepResponse\020\005\022\020\n\014SpecsRequest" +
+      "\020\006\022\021\n\rSpecsResponse\020\007\022\027\n\023GetStepValueReq" +
+      "uest\020\010\022\030\n\024GetStepValueResponse\020\t\022#\n\037GetL" +
+      "anguagePluginLibPathRequest\020\n\022$\n GetLang" +
+      "uagePluginLibPathResponse\020\013\022\021\n\rErrorResp" +
+      "onse\020\014\022\031\n\025GetAllConceptsRequest\020\r\022\032\n\026Get" +
+      "AllConceptsResponse\020\016\022\035\n\031PerformRefactor",
+      "ingRequest\020\017\022\036\n\032PerformRefactoringRespon" +
+      "se\020\020\022\031\n\025ExtractConceptRequest\020\021\022\032\n\026Extra" +
+      "ctConceptResponse\020\022\022\026\n\022FormatSpecsReques" +
+      "t\020\023\022\027\n\023FormatSpecsResponse\020\024\022!\n\035Unsuppor" +
+      "tedApiMessageResponse\020\025\022\031\n\025PerformRefres" +
+      "hRequest\020\026\022\032\n\026PerformRefreshResponse\020\027B\021" +
+      "\252\002\016Gauge.Messagesb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -26423,126 +27759,132 @@ public final class Api {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_SpecsResponse_SpecDetail_descriptor,
         new java.lang.String[] { "Spec", "ParseErrors", });
-    internal_static_gauge_messages_Error_descriptor =
-      getDescriptor().getMessageTypes().get(8);
-    internal_static_gauge_messages_Error_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_gauge_messages_Error_descriptor,
-        new java.lang.String[] { "Filename", "LineNumber", "Message", });
     internal_static_gauge_messages_GetAllConceptsRequest_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_gauge_messages_GetAllConceptsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetAllConceptsRequest_descriptor,
         new java.lang.String[] { });
     internal_static_gauge_messages_GetAllConceptsResponse_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_gauge_messages_GetAllConceptsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetAllConceptsResponse_descriptor,
         new java.lang.String[] { "Concepts", });
     internal_static_gauge_messages_ConceptInfo_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_gauge_messages_ConceptInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_ConceptInfo_descriptor,
         new java.lang.String[] { "StepValue", "Filepath", "LineNumber", });
     internal_static_gauge_messages_GetStepValueRequest_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_gauge_messages_GetStepValueRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetStepValueRequest_descriptor,
         new java.lang.String[] { "StepText", "HasInlineTable", });
     internal_static_gauge_messages_GetStepValueResponse_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_gauge_messages_GetStepValueResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetStepValueResponse_descriptor,
         new java.lang.String[] { "StepValue", });
     internal_static_gauge_messages_GetLanguagePluginLibPathRequest_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_gauge_messages_GetLanguagePluginLibPathRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetLanguagePluginLibPathRequest_descriptor,
         new java.lang.String[] { "Language", });
     internal_static_gauge_messages_GetLanguagePluginLibPathResponse_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_gauge_messages_GetLanguagePluginLibPathResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_GetLanguagePluginLibPathResponse_descriptor,
         new java.lang.String[] { "Path", });
     internal_static_gauge_messages_ErrorResponse_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_gauge_messages_ErrorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_ErrorResponse_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_gauge_messages_PerformRefactoringRequest_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_gauge_messages_PerformRefactoringRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_PerformRefactoringRequest_descriptor,
         new java.lang.String[] { "OldStep", "NewStep", });
     internal_static_gauge_messages_PerformRefactoringResponse_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_gauge_messages_PerformRefactoringResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_PerformRefactoringResponse_descriptor,
         new java.lang.String[] { "Success", "Errors", "FilesChanged", });
-    internal_static_gauge_messages_ExtractConceptInfoRequest_descriptor =
+    internal_static_gauge_messages_PerformRefreshRequest_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_gauge_messages_PerformRefreshRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_gauge_messages_PerformRefreshRequest_descriptor,
+        new java.lang.String[] { "Files", });
+    internal_static_gauge_messages_PerformRefreshResponse_descriptor =
       getDescriptor().getMessageTypes().get(19);
+    internal_static_gauge_messages_PerformRefreshResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_gauge_messages_PerformRefreshResponse_descriptor,
+        new java.lang.String[] { "Success", "Error", });
+    internal_static_gauge_messages_ExtractConceptInfoRequest_descriptor =
+      getDescriptor().getMessageTypes().get(20);
     internal_static_gauge_messages_ExtractConceptInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_ExtractConceptInfoRequest_descriptor,
         new java.lang.String[] { "Text", });
     internal_static_gauge_messages_ExtractConceptRequest_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_gauge_messages_ExtractConceptRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_ExtractConceptRequest_descriptor,
         new java.lang.String[] { "ConceptName", "Steps", "ChangeAcrossProject", "ConceptFileName", "SelectedTextInfo", });
     internal_static_gauge_messages_textInfo_descriptor =
-      getDescriptor().getMessageTypes().get(21);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_gauge_messages_textInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_textInfo_descriptor,
         new java.lang.String[] { "FileName", "StartingLineNo", "EndLineNo", });
     internal_static_gauge_messages_step_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_gauge_messages_step_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_step_descriptor,
         new java.lang.String[] { "Name", "Table", "ParamTableName", });
     internal_static_gauge_messages_ExtractConceptResponse_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_gauge_messages_ExtractConceptResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_ExtractConceptResponse_descriptor,
         new java.lang.String[] { "IsSuccess", "Error", "FilesChanged", });
     internal_static_gauge_messages_FormatSpecsRequest_descriptor =
-      getDescriptor().getMessageTypes().get(24);
+      getDescriptor().getMessageTypes().get(25);
     internal_static_gauge_messages_FormatSpecsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_FormatSpecsRequest_descriptor,
         new java.lang.String[] { "Specs", });
     internal_static_gauge_messages_FormatSpecsResponse_descriptor =
-      getDescriptor().getMessageTypes().get(25);
+      getDescriptor().getMessageTypes().get(26);
     internal_static_gauge_messages_FormatSpecsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_FormatSpecsResponse_descriptor,
         new java.lang.String[] { "Errors", "Warnings", });
     internal_static_gauge_messages_UnsupportedApiMessageResponse_descriptor =
-      getDescriptor().getMessageTypes().get(26);
+      getDescriptor().getMessageTypes().get(27);
     internal_static_gauge_messages_UnsupportedApiMessageResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_UnsupportedApiMessageResponse_descriptor,
         new java.lang.String[] { });
     internal_static_gauge_messages_APIMessage_descriptor =
-      getDescriptor().getMessageTypes().get(27);
+      getDescriptor().getMessageTypes().get(28);
     internal_static_gauge_messages_APIMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_gauge_messages_APIMessage_descriptor,
-        new java.lang.String[] { "MessageType", "MessageId", "ProjectRootRequest", "ProjectRootResponse", "InstallationRootRequest", "InstallationRootResponse", "AllStepsRequest", "AllStepsResponse", "SpecsRequest", "SpecsResponse", "StepValueRequest", "StepValueResponse", "LibPathRequest", "LibPathResponse", "Error", "AllConceptsRequest", "AllConceptsResponse", "PerformRefactoringRequest", "PerformRefactoringResponse", "ExtractConceptRequest", "ExtractConceptResponse", "FormatSpecsRequest", "FormatSpecsResponse", "UnsupportedApiMessageResponse", });
+        new java.lang.String[] { "MessageType", "MessageId", "ProjectRootRequest", "ProjectRootResponse", "InstallationRootRequest", "InstallationRootResponse", "AllStepsRequest", "AllStepsResponse", "SpecsRequest", "SpecsResponse", "StepValueRequest", "StepValueResponse", "LibPathRequest", "LibPathResponse", "Error", "AllConceptsRequest", "AllConceptsResponse", "PerformRefactoringRequest", "PerformRefactoringResponse", "ExtractConceptRequest", "ExtractConceptResponse", "FormatSpecsRequest", "FormatSpecsResponse", "UnsupportedApiMessageResponse", "PerformRefreshRequest", "PerformRefreshResponse", });
     gauge.messages.Spec.getDescriptor();
   }
 

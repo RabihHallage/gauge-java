@@ -40,6 +40,7 @@ public class GaugeConnection {
     private static final int GET_CONCEPT_MSG_ID = 6;
     private static final int PERFORM_REFACTORING_MSG_ID = 7;
     private static final int EXTRACT_CONCEPT_MSG_ID = 8;
+    private static final int PERFORM_REFRESH_MSG_ID = 9;
 
     private final int port;
     private Socket gaugeSocket;
@@ -240,6 +241,12 @@ public class GaugeConnection {
         return response.getPerformRefactoringResponse();
     }
 
+    public Api.PerformRefreshResponse sendPerformRefreshRequest(List<String> files) throws Exception {
+        Api.APIMessage refreshRequest = createPerformRefreshRequest(files);
+        Api.APIMessage response = getAPIResponse(refreshRequest);
+        return response.getPerformRefreshResponse();
+    }
+
     public Api.ExtractConceptResponse sendGetExtractConceptRequest(List<Api.step> steps, Api.step concept, boolean changeAcrossProject, String fileName, Api.textInfo selectedTextInfo) throws Exception {
         Api.APIMessage request = createExtractConceptRequest(steps, concept, changeAcrossProject, fileName, selectedTextInfo);
         Api.APIMessage response = getAPIResponse(request);
@@ -300,6 +307,17 @@ public class GaugeConnection {
                 .setMessageType(Api.APIMessage.APIMessageType.PerformRefactoringRequest)
                 .setMessageId(PERFORM_REFACTORING_MSG_ID)
                 .setPerformRefactoringRequest(performRefactoringRequest)
+                .build();
+    }
+
+    private Api.APIMessage createPerformRefreshRequest(List<String> files) {
+        Api.PerformRefreshRequest performRefreshRequest = Api.PerformRefreshRequest.newBuilder()
+                .addAllFiles(files)
+                .build();
+        return Api.APIMessage.newBuilder()
+                .setMessageType(Api.APIMessage.APIMessageType.PerformRefreshRequest)
+                .setMessageId(PERFORM_REFRESH_MSG_ID)
+                .setPerformRefreshRequest(performRefreshRequest)
                 .build();
     }
 
